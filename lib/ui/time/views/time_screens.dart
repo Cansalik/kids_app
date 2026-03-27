@@ -166,7 +166,7 @@ _dragTargets(int index, int pageIndex, BuildContext context) {
               Utils.textToSpeech(logic.timeText[data.data]!, MyApp.flutterTts).then((value) {
                 if (logic.count.length == 4) {
                   MyApp.flutterTts.stop();
-                  Utils.textToSpeech("Awesome", MyApp.flutterTts);
+                  Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                 }
               });
               await Future.delayed(const Duration(milliseconds: 2280), () {

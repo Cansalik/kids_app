@@ -213,7 +213,7 @@ dragTarget(BuildContext context, {int? index}) {
       },
       onAcceptWithDetails: (data) async {
         MyApp.flutterTts.stop();
-        Utils.textToSpeech("Awesome", MyApp.flutterTts);
+        Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         logic.accept = true;
         logic.update();
         await Future.delayed(const Duration(milliseconds: 2280), () {

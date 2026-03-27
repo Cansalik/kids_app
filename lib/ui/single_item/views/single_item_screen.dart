@@ -36,7 +36,6 @@ class SingleItemScreen extends StatelessWidget {
                         InkWell(
                           onTap: () => Get.back(),
                           child:
-
                           Image.asset(
                             Constant.getAssetIcons() + "btn_back_150.png",
                             height: AppSizes.height_5,

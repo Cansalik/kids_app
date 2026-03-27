@@ -82,9 +82,9 @@ static const languageTr = "tr";
     Color(0XFFFFA900),
     Color(0XFFFFD800),
   ];
-  static String txtHowManyObjects = "How Many Objects?";
+  static String txtHowManyObjects = "Kaç Tane Obje Var?";
 
-  static String txtCountTheObjects = "Count the objects";
+  static String txtCountTheObjects = "Objeleri say";
 
   /// <<===================>> ****** Widget Id's for refresh in GetX ****** <<===================>>
 

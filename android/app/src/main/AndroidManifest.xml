@@ -4,7 +4,7 @@
 >
 
     <application
-        android:label="Kids Preschool"
+        android:label="Okul Öncesi"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

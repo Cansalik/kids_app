@@ -8,41 +8,41 @@ class NumberToWord {
 
     List<String> ones = [
       '',
-      'one ',
-      'two ',
-      'three ',
-      'four ',
-      'five ',
-      'six ',
-      'seven ',
-      'eight ',
-      'nine ',
-      'ten ',
-      'eleven ',
-      'twelve ',
-      'thirteen ',
-      'fourteen ',
-      'fifteen ',
-      'sixteen ',
-      'seventeen ',
-      'eighteen ',
-      'nineteen '
+      'bir ',
+      'iki ',
+      'üç ',
+      'dört ',
+      'beş ',
+      'altı ',
+      'yedi ',
+      'sekiz ',
+      'dokuz ',
+      'on ',
+      'on bir ',
+      'on iki ',
+      'on üç ',
+      'on dört ',
+      'on beş ',
+      'on altı ',
+      'on yedi ',
+      'on sekiz ',
+      'on dokuz '
     ];
     List<String> tens = [
       '',
       '',
-      'twenty',
-      'thirty',
-      'forty',
-      'fifty',
-      'sixty',
-      'seventy',
-      'eighty',
-      'ninety'
+      'yirmi',
+      'otuz',
+      'kırk',
+      'elli',
+      'altmış',
+      'yetmiş',
+      'seksen',
+      'doksan'
     ];
 
     str += (numberString[0]) != '0'
-        ? '${ones[int.parse(numberString[0])]}hundred '
+        ? '${ones[int.parse(numberString[0])]}yüz '
         : ''; //hundreds
     if ((int.parse('${numberString[1]}${numberString[2]}')) < 20 &&
         (int.parse('${numberString[1]}${numberString[2]}')) > 9) {
@@ -73,20 +73,20 @@ class NumberToWord {
     if ((int.parse('${numberString[5]}${numberString[6]}')) < 20 &&
         (int.parse('${numberString[5]}${numberString[6]}')) > 9) {
       str +=
-          '${ones[int.parse('${numberString[5]}${numberString[6]}')]}thousand ';
+          '${ones[int.parse('${numberString[5]}${numberString[6]}')]}bin ';
     } else {
       str += (numberString[5]) != '0'
           ? '${tens[int.parse(numberString[5])]} '
           : ''; //ten thousands
       str += (numberString[6]) != '0'
-          ? '${ones[int.parse(numberString[6])]}thousand '
+          ? '${ones[int.parse(numberString[6])]}bin '
           : ''; //thousands
       str += (numberString[5] != '0') && (numberString[6] == '0')
-          ? 'thousand '
+          ? 'bin '
           : '';
     }
     str += (numberString[7]) != '0'
-        ? '${ones[int.parse(numberString[7])]}hundred '
+        ? '${ones[int.parse(numberString[7])]}yüz '
         : ''; //hundreds
     if ((int.parse('${numberString[8]}${numberString[9]}')) < 20 &&
         (int.parse('${numberString[8]}${numberString[9]}')) > 9) {

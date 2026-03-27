@@ -31,7 +31,7 @@ class SpellingScreen extends StatelessWidget {
         ),
         title: GetBuilder<SpellingController>(builder: (logic) {
           return Text(
-            logic.title ?? "",
+            logic.title!.tr ?? "",
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,

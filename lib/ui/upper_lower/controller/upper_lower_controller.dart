@@ -28,7 +28,7 @@ class UpperLowerController extends GetxController{
   void onInit() {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title!, MyApp.flutterTts);
+    Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     getOptions();
     super.onInit();
   }
@@ -162,7 +162,7 @@ update();
 
     if (count.length == que.length) {
       MyApp.flutterTts.stop();
-      Utils.textToSpeech("Awesome", MyApp.flutterTts);
+      Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         accept = true;
 update();
       await Future.delayed(const Duration(milliseconds: 2280), () {

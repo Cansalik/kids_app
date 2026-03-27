@@ -14,16 +14,16 @@ class ParentDialog extends StatefulWidget {
 
 class ParentDialogState extends State<ParentDialog> {
   Map<int, String> numMap = {
-    0: "Zero",
-    1: "One",
-    2: "Two",
-    3: "Three",
-    4: "Four",
-    5: "Five",
-    6: "Six",
-    7: "Seven",
-    8: "Eight",
-    9: "Nine",
+    0: "Sıfır",
+    1: "Bir",
+    2: "İki",
+    3: "Üç",
+    4: "Dört",
+    5: "Beş",
+    6: "Altı",
+    7: "Yedi",
+    8: "Sekiz",
+    9: "Dokuz",
   };
 
   List<int>? numList;

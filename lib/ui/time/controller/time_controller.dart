@@ -56,22 +56,22 @@ class TimeController extends GetxController {
   };
 
   Map<String, String> timeText = {
-    "01:30": "Half past one",
-    "04:15": "Quarter past four",
-    "08:45": "Quarter to nine",
-    "09:30": "Half past nine",
-    "02:30": "Half past eight",
-    "05:45": "Quarter to six",
-    "10:00": "Ten o' clock",
-    "11:15": "Quarter past eleven",
-    "03:00": "Three o' clock",
-    "07:15": "Quarter past seven",
-    "12:00": "Twelve o' clock",
-    "10:15": "Quarter past ten",
-    "02:45": "Quarter to three",
-    "06:00": "Six o' clock",
-    "08:30": "Half past eight",
-    "11:45": "Quarter to twelve",
+  "01:30": "Bir buçuk",
+  "04:15": "Dördü çeyrek geçiyor",
+  "08:45": "Dokuza çeyrek var",
+  "09:30": "Dokuz buçuk",
+  "02:30": "İki buçuk",
+  "05:45": "Altıya çeyrek var",
+  "10:00": "Saat on",
+  "11:15": "On biri çeyrek geçiyor",
+  "03:00": "Saat üç",
+  "07:15": "Yediyi çeyrek geçiyor",
+  "12:00": "Saat on iki",
+  "10:15": "Onu çeyrek geçiyor",
+  "02:45": "Üçe çeyrek var",
+  "06:00": "Saat altı",
+  "08:30": "Sekiz buçuk",
+  "11:45": "On ikiye çeyrek var"
   };
 
   List<String> option = [];

@@ -7,10 +7,10 @@ import '../utils/preference.dart';
 Future<Locale> getLocale() async {
   String languageCode =
       Preference.shared.getString(Preference.selectedLanguage) ??
-          Constant.languageEn;
+          Constant.languageTr;
   String countryCode =
       Preference.shared.getString(Preference.selectedCountryCode) ??
-          Constant.countryCodeEn;
+          Constant.countryCodeTr;
   Debug.printLog("getLocale Updated" "$languageCode   $countryCode");
   return _locale(languageCode, countryCode);
 }
@@ -18,5 +18,5 @@ Future<Locale> getLocale() async {
 Locale _locale(String languageCode, String countryCode) {
   return languageCode.isNotEmpty
       ? Locale(languageCode, countryCode)
-      : const Locale(Constant.languageEn, Constant.countryCodeEn);
+      : const Locale(Constant.languageTr, Constant.countryCodeTr);
 }

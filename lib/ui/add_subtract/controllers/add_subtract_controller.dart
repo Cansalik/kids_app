@@ -92,10 +92,10 @@ class AddSubtractController extends GetxController {
   textSpeech() {
     if (subId == 14) {
       MyApp.flutterTts.stop();
-      Utils.textToSpeech("$num1 minus $num2 =", MyApp.flutterTts);
+      Utils.textToSpeech("$num1" + " Eksi " + "$num2" + " =", MyApp.flutterTts);
     } else {
       MyApp.flutterTts.stop();
-      Utils.textToSpeech("$num1 + $num2 =", MyApp.flutterTts);
+      Utils.textToSpeech("$num1" + " + " + "$num2" + " =", MyApp.flutterTts);
     }
   }
 

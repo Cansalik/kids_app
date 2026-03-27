@@ -162,9 +162,9 @@ dragTargets({int? pageIndex}) {
                     logic.update();
                 }
                 MyApp.flutterTts.stop();
-                Utils.textToSpeech(logic.name[data.data]!, MyApp.flutterTts).then((value) {
+                Utils.textToSpeech(logic.name[data.data]!.tr, MyApp.flutterTts).then((value) {
                   if (logic.count.length == logic.dragQue.length) {
-                    Utils.textToSpeech("Awesome", MyApp.flutterTts);
+                    Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                   }
                 });
                 if (logic.count.length == logic.dragQue.length) {
@@ -235,7 +235,7 @@ dragabbles({int? pageIndex}) {
                 if (logic.count.contains(logic.map.keys.firstWhere(
                         (element) => logic.map[element] == logic.options[index]))) {
                   MyApp.flutterTts.stop();
-                  Utils.textToSpeech(logic.options[index].toString(), MyApp.flutterTts);
+                  Utils.textToSpeech(logic.options[index].toString().tr, MyApp.flutterTts);
                 }
                   logic.isDrag = true;
                 logic.update();

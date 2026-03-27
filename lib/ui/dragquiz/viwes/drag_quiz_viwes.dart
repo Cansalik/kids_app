@@ -126,7 +126,7 @@ _nameText(int index) {
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
       child: Text(
-        logic.itemList[index].itemName!.toUpperCase(),
+        logic.itemList[index].itemName!.toUpperCase().tr,
         style:  TextStyle(
             fontSize: AppFontSize.size_23,
             fontFamily: "Angella",
@@ -392,11 +392,11 @@ _dragTarget(BuildContext context, {int? index}) {
           } else if (logic.subId == 17 &&
               logic.itemList[index!].itemName == "Dollar") {
             Utils.textToSpeech(
-                "txtOne".tr + logic.itemList[index].itemName!,
+                "txtOne".tr + logic.itemList[index].itemName!.tr,
                 MyApp.flutterTts);
           } else {
             Utils.textToSpeech(
-                logic.itemList[index!].itemName!, MyApp.flutterTts);
+                logic.itemList[index!].itemName!.tr, MyApp.flutterTts);
           }
           await Future.delayed(const Duration(milliseconds: 2280), () async {
             if (index != logic.itemList.length - 1) {
@@ -404,20 +404,21 @@ _dragTarget(BuildContext context, {int? index}) {
               logic.current = logic.current! + 1;
               logic.update();
               await logic.generateOptions(index + 1);
-            } else {
-              showDialog(
-                  context: context,
-                  builder: (context) {
-                    return CompleteDialog(restartFunction: () {
-                      Navigator.of(context).pop();
-                      logic.pageController!.jumpToPage(0);
-                      logic.current = 1;
-                      logic.update();
-                      logic.getDataFromDatabase();
-                    });
-                  });
-            }
-            logic.accept = false;
+                } else {
+                  showDialog( 
+                    context: context,
+                    builder: (context) {
+                      return CompleteDialog(restartFunction: () {
+                        Navigator.of(context).pop();
+                        logic.pageController!.jumpToPage(0);
+                        logic.current = 1;
+                        logic.update();
+                        logic.getDataFromDatabase();
+                      });
+                    },
+                  );
+                }
+             logic.accept = false;
           });
         },
         onWillAcceptWithDetails: (data) {

@@ -54,12 +54,20 @@ class QuizScreen extends StatelessWidget {
                     return Center(
                         child: logic.catId == 3
                             ? logic.trueItem != null
-                                ? Image.asset(
-                                    Constant.getAsset() +
-                                        logic.trueItem!.image +
-                                        ".webp",
+                                ? InkWell(
+                                        onTap: () {
+                                          MyApp.flutterTts.stop();
+                                          Utils.textToSpeech(
+                                            logic.trueItem?.itemNameTts
+                                                    .toString().tr ??
+                                                "",
+                                            MyApp.flutterTts,
+                                          );
+                                        },
+                                        child: Image.asset( Constant.getAsset() + logic.trueItem!.image + ".webp",
                                     height: AppSizes.height_20,
-                                  )
+                                  ),
+                                      )
                                 : const SizedBox()
                             : logic.catId == 4
                                 ? Column(
@@ -70,7 +78,7 @@ class QuizScreen extends StatelessWidget {
                                           MyApp.flutterTts.stop();
                                           Utils.textToSpeech(
                                             logic.trueItem?.itemNameTts
-                                                    .toString() ??
+                                                    .toString().tr ??
                                                 "",
                                             MyApp.flutterTts,
                                           );

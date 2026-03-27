@@ -49,7 +49,7 @@ class MissingNumbersController extends GetxController {
 
     if (count.length == que.length) {
       MyApp.flutterTts.stop();
-      Utils.textToSpeech("Awesome", MyApp.flutterTts);
+      Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         accept = true;
         update();
       await Future.delayed(const Duration(milliseconds: 2280), () {

@@ -31,7 +31,7 @@ class SpellingController extends GetxController{
   void onInit() {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title!, MyApp.flutterTts);
+    Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     getDataFromDatabase();
     super.onInit();
   }
@@ -53,8 +53,8 @@ class SpellingController extends GetxController{
 update();
     if (count!.length == spelling!.length) {
       MyApp.flutterTts.stop();
-      Utils.textToSpeech(spellingList![pageIndex!].spelling!, MyApp.flutterTts).then(
-              (value) => Utils.textToSpeech("Well done", MyApp.flutterTts).then((value) {
+      Utils.textToSpeech(spellingList![pageIndex!].spelling!.tr, MyApp.flutterTts).then(
+              (value) => Utils.textToSpeech("Tebrikler".tr, MyApp.flutterTts).then((value) {
             showDialog(
                 context: context,
                 builder: (context) {

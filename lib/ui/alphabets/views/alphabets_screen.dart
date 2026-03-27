@@ -31,7 +31,7 @@ class AlphabetsScreen extends StatelessWidget {
         ),
         title: GetBuilder<AlphabetsController>(builder: (logic) {
           return Text(
-            logic.title ?? "",
+            logic.title!.tr ?? "",
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,
@@ -99,6 +99,7 @@ _itemAlphabet(BuildContext context, int index) {
       Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          SizedBox(height: 0.2),
           _alphabetColor(context, index),
           _alphabetObject(context, index)
         ],
@@ -182,16 +183,7 @@ _alphabetObject(BuildContext context, int index) {
                   "${logic.alphabetsList![index].objectImage}.webp",
               height: MediaQuery.of(context).size.height * 0.25,
             ),
-            Text(
-              logic.alphabetsList![index].name!,
-              style: const TextStyle(
-                color: AppColor.theme,
-                fontSize: 22,
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            )
+            SizedBox(height: 55)
           ],
         ),
       ),

@@ -37,40 +37,40 @@ class MonthsDaysController extends GetxController {
     12: Constant.getAssetDragMonths()+"months_december.webp",
   };
   Map<int, String> monthName = {
-    1: "January",
-    2: "February",
-    3: "March",
-    4: "April",
-    5: "May",
-    6: "June",
-    7: "July",
-    8: "August",
-    9: "September",
-    10: "October",
-    11: "November",
-    12: "December",
+    1: "Ocak",
+    2: "Şubat",
+    3: "Mart",
+    4: "Nisan",
+    5: "Mayıs",
+    6: "Haziran",
+    7: "Temmuz",
+    8: "Ağustos",
+    9: "Eylül",
+    10: "Ekim",
+    11: "Kasım",
+    12: "Aralık",
   };
 
   Map<int, String> map = {};
   Map<int, String> name = {};
 
   Map<int, String> mapDays = {
-    1: Constant.getAssetDragDays()+"days_sunday.webp",
-    2: Constant.getAssetDragDays()+"days_monday.webp",
-    3: Constant.getAssetDragDays()+"days_tuesday.webp",
-    4: Constant.getAssetDragDays()+"days_wednesday.webp",
-    5: Constant.getAssetDragDays()+"days_thursday.webp",
-    6: Constant.getAssetDragDays()+"days_friday.webp",
-    7: Constant.getAssetDragDays()+"days_saturday.webp",
+    1: Constant.getAssetDragDays()+"days_monday.webp",
+    2: Constant.getAssetDragDays()+"days_tuesday.webp",
+    3: Constant.getAssetDragDays()+"days_wednesday.webp",
+    4: Constant.getAssetDragDays()+"days_thursday.webp",
+    5: Constant.getAssetDragDays()+"days_friday.webp",
+    6: Constant.getAssetDragDays()+"days_saturday.webp",
+    7: Constant.getAssetDragDays()+"days_sunday.webp",
   };
   Map<int, String> dayName = {
-    1: "Sunday",
-    2: "Monday",
-    3: "Tuesday",
-    4: "Wednesday",
-    5: "Thursday",
-    6: "Friday",
-    7: "Saturday",
+    1: "Pazartesi",
+    2: "Salı",
+    3: "Çarşamba",
+    4: "Perşembe",
+    5: "Cuma",
+    6: "Cumartesi",
+    7: "Pazar",
   };
 
 

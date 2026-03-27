@@ -21,7 +21,7 @@ class CompareController extends GetxController {
   int? countAnswer;
   String? que;
 
-  List<String> questions = ["Which group has less?", "Which group has more?"];
+List<String> questions = ["Hangisi daha az?", "Hangisi daha fazla?"];
   dynamic args = Get.arguments;
   String? title;
   int? subId;

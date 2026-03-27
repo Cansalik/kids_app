@@ -194,7 +194,7 @@ _countOptions({int? pageIndex}) {
                         logic.accept = true;
                         logic.update();
                         MyApp.flutterTts.stop();
-                        Utils.textToSpeech("Awesome", MyApp.flutterTts);
+                        Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                         await Future.delayed(const Duration(milliseconds: 2280),
                             () {
                           if (pageIndex != logic.totalQue! - 1) {
