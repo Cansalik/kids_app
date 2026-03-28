@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -41,16 +40,12 @@ class SettingScreen extends StatelessWidget {
       ),
       body: SafeArea(
         top: false,
-        bottom:true ,
+        bottom: true,
         child: GetBuilder<SettingsController>(builder: (logic) {
           return SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                GetBuilder<SettingsController>(builder: (logic) {
-                  return !Preference.shared.getIsPurchase() && Debug.googleAd
-                      ?_proSection():SizedBox();
-                }),
                 Divider(
                   color: AppColor.colorGray50,
                   thickness: AppSizes.height_1_5,
@@ -97,16 +92,6 @@ class SettingScreen extends StatelessWidget {
                   height: AppSizes.height_1_5,
                 ),
                 settingItem(
-                  image: Constant.getAssetIcons() + "ic_rate.png",
-                  onTap: () => logic.rate(context),
-                  text: "txtRate".tr,
-                ),
-                Divider(
-                  color: AppColor.colorGray50,
-                  thickness: AppFontSize.size_1,
-                  height: 0,
-                ),
-                settingItem(
                   image: Constant.getAssetIcons() + "ic_share.png",
                   onTap: () => logic.share(),
                   text: "txtShare".tr,
@@ -115,21 +100,6 @@ class SettingScreen extends StatelessWidget {
                   color: AppColor.colorGray50,
                   thickness: AppFontSize.size_1,
                   height: 0,
-                ),
-                settingItem(
-                  image: Constant.getAssetIcons() + "ic_feedback.png",
-                  onTap: () => logic.sendFeedback(),
-                  text: "txtSendFeedback".tr,
-                ),
-                Divider(
-                  color: AppColor.colorGray50,
-                  thickness: AppFontSize.size_1,
-                  height: 0,
-                ),
-                settingItem(
-                  image: Constant.getAssetIcons() + "ic_policy.png",
-                  onTap: () => launchUrl(Uri.parse(Constant.privacyPolicyURL)),
-                  text: "txtPrivacyPolicy".tr,
                 ),
               ],
             ),
@@ -146,8 +116,7 @@ class SettingScreen extends StatelessWidget {
           color: AppColor.red,
           image: DecorationImage(
               image: AssetImage(Constant.getAssetIcons() + "setting_bg.png"),
-              fit: BoxFit.fill)
-      ),
+              fit: BoxFit.fill)),
       child: InkWell(
         onTap: () {
           settingsController.onTapRemoveAds();
@@ -222,7 +191,8 @@ topBar() {
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,
-                fontWeight: FontWeight.bold, fontFamily: "UrbanistBlack"),
+                fontWeight: FontWeight.bold,
+                fontFamily: "UrbanistBlack"),
           ),
         ),
       ],
@@ -255,14 +225,14 @@ settingItem({
           ),
           Expanded(
               child: Text(
-                text!,
-                style: TextStyle(
-                    color: AppColor.black,
-                    fontSize: AppFontSize.size_14,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w800,
-                    fontFamily: "Urbanist"),
-              )),
+            text!,
+            style: TextStyle(
+                color: AppColor.black,
+                fontSize: AppFontSize.size_14,
+                letterSpacing: 1,
+                fontWeight: FontWeight.w800,
+                fontFamily: "Urbanist"),
+          )),
           if (trailing != null) ...{
             trailing,
           }
