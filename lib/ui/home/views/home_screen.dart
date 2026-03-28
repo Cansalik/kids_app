@@ -16,7 +16,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColor.white,
       body: SafeArea(
         top: false,
-        bottom:true ,
+        bottom: false,
         child: Column(
           children: [
             GetBuilder<HomeController>(

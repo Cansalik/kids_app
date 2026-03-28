@@ -7,6 +7,7 @@ class VideoListController extends GetxController {
   String? title;
   int? subId;
   List<VideoTable>? videoList = [];
+  bool isLoading = true;
 
   @override
   void onInit() {
@@ -30,7 +31,7 @@ class VideoListController extends GetxController {
 
   getDataFromDatabase(int subId) async {
     videoList = await DataBaseHelper().getVideo(subId);
-    print("${videoList?[0].videoId}");
+    isLoading = false;
     update();
   }
 

@@ -183,13 +183,12 @@ class DataBaseHelper {
     List<VideoTable> videosList = [];
     var dbClient = await db;
     List<Map<String, dynamic>> maps = await dbClient
-        .rawQuery("SELECT * FROM $kidVideoTable  WHERE id = $catId");
+        .rawQuery("SELECT * FROM $kidVideoTable WHERE category_id = $catId");
     if (maps.isNotEmpty) {
       for (var answer in maps) {
         var videoData = VideoTable.fromJson(answer);
         videosList.add(videoData);
       }
-
     }
     return videosList;
   }

@@ -40,7 +40,7 @@ class SubCategoryScreen extends StatelessWidget {
       ),
       body: SafeArea(
         top: false,
-        bottom:true ,
+        bottom: false,
         child: Stack(
           children: <Widget>[
             Image.asset(Constant.getAssetBackground() + "bg_main.png",
@@ -56,10 +56,11 @@ class SubCategoryScreen extends StatelessWidget {
                         child: GridView.builder(
                           padding: const EdgeInsets.all(20),
                           itemCount: logic.subcategoryList?.length,
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: AppFontSize.size_12,
-                              mainAxisSpacing: AppFontSize.size_16),
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                  crossAxisSpacing: AppFontSize.size_12,
+                                  mainAxisSpacing: AppFontSize.size_16),
                           itemBuilder: (BuildContext context, int index) {
                             return subcategory(logic.subcategoryList![index],
                                 logic.catId, logic);
@@ -75,7 +76,6 @@ class SubCategoryScreen extends StatelessWidget {
       ),
     );
   }
-
 
   subcategory(
     SubCategoryTable subcategoryList,

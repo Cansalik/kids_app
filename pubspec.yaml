@@ -40,6 +40,7 @@ dependencies:
 #  youtube_player_flutter: ^9.0.1
   in_app_purchase: ^3.2.3
   audioplayers: ^6.5.0
+  cached_network_image: ^3.4.1
 
 dependency_overrides:
   http: ^1.4.0

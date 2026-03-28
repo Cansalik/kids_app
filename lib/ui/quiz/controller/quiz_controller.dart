@@ -24,8 +24,6 @@ class QuizController extends GetxController {
   Random? random;
   int? correctPosition;
 
-  ExamQuestionAnswer? trueItem;
-
   Color? defaultColor = AppColor.colorBlueLight;
   Color? defaultTxtColor = AppColor.colorBlueGreen;
   List<Color>? containerColors;
@@ -38,8 +36,6 @@ class QuizController extends GetxController {
   int currentIndex = 0;
   Color? currentColor;
   Color? txtCurrentColor;
-
-
 
   @override
   Future<void> onInit() async {
@@ -66,6 +62,7 @@ class QuizController extends GetxController {
   }
 
   initSound() {
+    final trueItem = getCurrentTrueItem();
     if (catId == 3) {
       MyApp.flutterTts.stop();
       Utils.textToSpeech(
@@ -73,22 +70,35 @@ class QuizController extends GetxController {
     }
   }
 
+  ExamQuestionAnswer? getCurrentTrueItem() {
+    if (allQuestionsList.isEmpty) {
+      return null;
+    }
+
+    return allQuestionsList.firstWhere((item) => item.isTrue == true);
+  }
+
+  void syncCurrentQuestion() {
+    if (allQuestionsDataMap.isEmpty) {
+      allQuestionsList = [];
+      containerColors = [];
+      txtColors = [];
+      return;
+    }
+
+    allQuestionsList = allQuestionsDataMap[currentQuestionIndex];
+    containerColors =
+        List<Color>.filled(allQuestionsList.length, defaultColor!);
+    txtColors = List<Color>.filled(allQuestionsList.length, defaultTxtColor!);
+  }
 
   void onClickPrev() {
     if (currentQuestionIndex > 0) {
       currentQuestionIndex--;
       print(":::onClickPrev::$currentQuestionIndex");
-
-      allQuestionsList = allQuestionsDataMap[currentQuestionIndex];
-      trueItem = allQuestionsList.firstWhere((item) => item.isTrue == true);
       MyApp.flutterTts.stop();
-
+      syncCurrentQuestion();
       initSound();
-      containerColors =
-          List<Color>.filled(allQuestionsList.length, defaultColor!);
-      txtColors=
-      List<Color>.filled(allQuestionsList.length, defaultTxtColor!);
-
     }
 
     update([Constant.idColor, Constant.idImage, Constant.idQuiz]);
@@ -100,29 +110,14 @@ class QuizController extends GetxController {
       currentQuestionIndex++;
 
       print(":::onClickNext::$currentQuestionIndex");
-      allQuestionsList = allQuestionsDataMap[currentQuestionIndex];
-      trueItem = allQuestionsList.firstWhere((item) => item.isTrue == true);
       MyApp.flutterTts.stop();
-
+      syncCurrentQuestion();
       initSound();
-      containerColors =
-          List<Color>.filled(allQuestionsList.length, defaultColor!);
-      txtColors=
-      List<Color>.filled(allQuestionsList.length, defaultTxtColor!);
     } else {
-      currentQuestionIndex = 0;
-      currentQuestionIndex++;
+      MyApp.flutterTts.stop();
+      getRandomArray();
       print(":::onClickNext::$currentQuestionIndex");
-      examQuestionAnswerList = allQuestionsDataMap[currentQuestionIndex];
-      trueItem =
-          examQuestionAnswerList.firstWhere((item) => item.isTrue == true);
-
       initSound();
-      containerColors =
-          List<Color>.filled(examQuestionAnswerList.length, defaultColor!);
-      txtColors=
-      List<Color>.filled(allQuestionsList.length, defaultTxtColor!);
-
     }
 
     update([Constant.idColor, Constant.idImage, Constant.idQuiz]);
@@ -138,10 +133,14 @@ class QuizController extends GetxController {
     random = Random();
 
     if (learningDataModelArrayList.isNotEmpty) {
-      // Check if the learningDataModelArrayList is not empty
-      for (int i = 0; i < learningDataModelArrayList.length; i++) {
+      final List<int> questionOrder = List<int>.generate(
+        learningDataModelArrayList.length,
+        (index) => index,
+      )..shuffle(random);
+
+      for (final correctIndex in questionOrder) {
         examQuestionAnswerList = [];
-        correctPosition = random!.nextInt(learningDataModelArrayList.length);
+        correctPosition = correctIndex;
         examQuestionAnswerList.add(ExamQuestionAnswer(
           learningDataModelArrayList[correctPosition!].itemImage ?? "",
           true,
@@ -168,15 +167,10 @@ class QuizController extends GetxController {
         }
         examQuestionAnswerList.shuffle();
         allQuestionsDataMap.add(examQuestionAnswerList.toList());
-
-        /// Store the question list in the map
-        allQuestionsList = allQuestionsDataMap[currentQuestionIndex];
-        trueItem = allQuestionsList.firstWhere((item) => item.isTrue == true);
-        containerColors =
-            List<Color>.filled(allQuestionsList.length, defaultColor!);
-        txtColors=
-            List<Color>.filled(allQuestionsList.length, defaultTxtColor!);
       }
+
+      currentQuestionIndex = 0;
+      syncCurrentQuestion();
     }
 
     update([Constant.idColor, Constant.idImage, Constant.idQuiz]);
@@ -190,12 +184,13 @@ class QuizController extends GetxController {
 
     currentColor = containerColors![itemIndex];
 
-    Color textColor =
-    allQuestionsList[itemIndex].isTrue ? AppColor.colorBlueGreen : AppColor.white;
+    Color textColor = allQuestionsList[itemIndex].isTrue
+        ? AppColor.colorBlueGreen
+        : AppColor.white;
 
     txtColors![itemIndex] = textColor;
 
-    txtCurrentColor=txtColors![itemIndex];
+    txtCurrentColor = txtColors![itemIndex];
 
     allQuestionsList[itemIndex].isTrue
         ? Utils.showToast(context, "Doğru Cevap")

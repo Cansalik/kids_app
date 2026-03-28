@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kids_playroom/google_ads/custom_ad.dart';
@@ -28,7 +26,7 @@ class DragSubcategoryScreen extends StatelessWidget {
         ),
         title: GetBuilder<DragSubcategoryControllers>(builder: (logic) {
           return Text(
-              logic.title.toString().tr,
+            logic.title.toString().tr,
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,
@@ -37,11 +35,10 @@ class DragSubcategoryScreen extends StatelessWidget {
           );
         }),
       ),
-
       backgroundColor: AppColor.bg,
       body: SafeArea(
         top: false,
-        bottom:true ,
+        bottom: false,
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
@@ -55,7 +52,7 @@ class DragSubcategoryScreen extends StatelessWidget {
       ),
     );
   }
-         }
+}
 
 _categoryWidget() {
   return GetBuilder<DragSubcategoryControllers>(builder: (logic) {

@@ -12,31 +12,30 @@ class VideoSubcategoryController extends GetxController {
   }
 
   List<String> videoCategory = [
-    "ABC Songs",
-    "Number Songs",
-    "Color Songs",
-    "Animal Songs",
-    "Shape Songs",
-    "Vehicle Songs",
-    "Fruit Songs",
-    "Vegetable Songs",
-    "Day Songs",
-    "Month Songs",
-    "Clothes Songs"
+    "Alfabe Şarkıları",
+    "Sayı Şarkıları",
+    "Renk Şarkıları",
+    "Hayvan Şarkıları",
+    "Şekil Şarkıları",
+    "Araç Şarkıları",
+    "Meyve Şarkıları",
+    "Sebze Şarkıları",
+    "Gün Şarkıları",
+    "Ay Şarkıları",
+    "Kıyafet Şarkıları"
   ];
   List<String> subCategory = [
-   "vt_abc.png",
-   "vt_number.png",
-   "vt_color.png",
-   "vt_animal.png",
-   "vt_shape.png",
-   "vt_vehicle.png",
-   "vt_fruit.png",
-   "vt_vegetable.png",
-   "vt_day.png",
-   "vt_month.png",
-   "vt_clothes.png"
-
+    "vt_abc.png",
+    "vt_number.png",
+    "vt_color.png",
+    "vt_animal.png",
+    "vt_shape.png",
+    "vt_vehicle.png",
+    "vt_fruit.png",
+    "vt_vegetable.png",
+    "vt_day.png",
+    "vt_month.png",
+    "vt_clothes.png"
   ];
 
   getDataFromArgs() {
@@ -49,6 +48,4 @@ class VideoSubcategoryController extends GetxController {
       }
     }
   }
-
-
 }

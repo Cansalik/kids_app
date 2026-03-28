@@ -1,5 +1,5 @@
 import 'package:animate_do/animate_do.dart';
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kids_playroom/database/tables/item_table.dart';
 import 'package:kids_playroom/google_ads/custom_ad.dart';
@@ -40,10 +40,9 @@ class ItemScreen extends StatelessWidget {
                 fontFamily: "UrbanistBlack"),
           ),
         ),
-
         body: SafeArea(
           top: false,
-          bottom:true ,
+          bottom: false,
           child: Stack(
             children: <Widget>[
               Image.asset(Constant.getAssetBackground() + "bg_main.png",
@@ -53,31 +52,30 @@ class ItemScreen extends StatelessWidget {
               GetBuilder<ItemController>(
                   id: Constant.idItem,
                   builder: (logic) {
-                     return Column(
-                       children: [
-                         Expanded(
-                           child: GridView.builder(
+                    return Column(
+                      children: [
+                        Expanded(
+                          child: GridView.builder(
                             padding: const EdgeInsets.all(12),
-                            itemCount:logic.itemList?.length,
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                crossAxisSpacing: AppFontSize.size_8,
-                                mainAxisSpacing: AppFontSize.size_8),
+                            itemCount: logic.itemList?.length,
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2,
+                                    crossAxisSpacing: AppFontSize.size_8,
+                                    mainAxisSpacing: AppFontSize.size_8),
                             itemBuilder: (BuildContext context, int index) {
-                              return items(logic.itemList![index],index);
+                              return items(logic.itemList![index], index);
                             },
-                    ),
-                         ),
-                         const BannerAdClass()
-                       ],
-                     );
-
+                          ),
+                        ),
+                        const BannerAdClass()
+                      ],
+                    );
                   })
             ],
           ),
         ));
   }
-
 
   items(ItemTable itemList, int index) {
     return InkWell(
@@ -100,7 +98,8 @@ class ItemScreen extends StatelessWidget {
                     offset: Offset(1.5, 1.5),
                     spreadRadius: 1)
               ]),
-          child: Image.asset(Constant.getAsset() + itemList.itemImage + ".webp"),
+          child:
+              Image.asset(Constant.getAsset() + itemList.itemImage + ".webp"),
         ),
       ),
     );

@@ -39,7 +39,7 @@ class VideoSubCategoryScreen extends StatelessWidget {
       ),
       body: SafeArea(
         top: false,
-        bottom:true ,
+        bottom: false,
         child: GetBuilder<VideoSubcategoryController>(
             id: Constant.idSubCategory,
             builder: (logic) {

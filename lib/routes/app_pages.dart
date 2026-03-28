@@ -43,8 +43,6 @@ import 'package:kids_playroom/ui/upper_lower/bindings/upper_lower_binding.dart';
 import 'package:kids_playroom/ui/upper_lower/views/upper_lower_screen.dart';
 import 'package:kids_playroom/ui/videoList/bindings/video_list_binding.dart';
 import 'package:kids_playroom/ui/videoList/views/video_list_screen.dart';
-import 'package:kids_playroom/ui/video_player/bindings/video_player_binding.dart';
-import 'package:kids_playroom/ui/video_player/views/video_player_screen.dart';
 import 'package:kids_playroom/ui/video_subcategory/bindings/video_subcategory_binding.dart';
 import 'package:kids_playroom/ui/video_subcategory/views/video_subcategory_screen.dart';
 import 'app_routes.dart';
@@ -153,10 +151,6 @@ class AppPages {
       name: AppRoutes.videoList,
       page: () => VideoListScreen(),
       binding:  VideoListBinding() ,
-    ),GetPage(
-      name: AppRoutes.videoPlayer,
-      page: () => VideoPlayerScreen(),
-      binding:  VideoPlayerBinding() ,
     ),
   ];
 }
