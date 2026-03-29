@@ -63,7 +63,7 @@ class QuizController extends GetxController {
 
   initSound() {
     final trueItem = getCurrentTrueItem();
-    if (catId == 3) {
+    if (catId == 3 || catId == 4) {
       MyApp.flutterTts.stop();
       Utils.textToSpeech(
           trueItem?.itemNameTts.toString().tr ?? "", MyApp.flutterTts);

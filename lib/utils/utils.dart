@@ -1,4 +1,4 @@
- // ignore_for_file: depend_on_referenced_packages
+// ignore_for_file: depend_on_referenced_packages
 
 import 'dart:io';
 import 'package:audioplayers/audioplayers.dart';
@@ -13,10 +13,11 @@ import 'preference.dart';
 import 'sizer_utils.dart';
 import 'package:intl/intl.dart' as intl;
 
-
 class Utils {
   static AudioPlayer audioPlayer = AudioPlayer();
+  static AudioPlayer effectPlayer = AudioPlayer();
   static const audio = "sounds/background_music.mp3";
+  static const alertAudio = "sounds/alert.mp3";
   static showToast(BuildContext context, String msg) {
     return Fluttertoast.showToast(
       msg: msg,
@@ -31,9 +32,6 @@ class Utils {
     return Preference.shared.getBool(Preference.isFirstTimeOpenApp) ??
         Constant.boolValueTrue;
   }
-
-
-
 
   static decimalNumberFormat(int number) {
     return intl.NumberFormat.decimalPattern().format(number);
@@ -64,9 +62,10 @@ class Utils {
         await flutterTts.setSpeechRate(0.5);
         await flutterTts.speak(speakText);
       }
-  }else{
+    } else {
       await flutterTts.stop();
-    }}
+    }
+  }
 
   static Map<String, Color> colorList = const {
     "orange": Color(0XFFED4A0D),
@@ -108,14 +107,26 @@ class Utils {
   }
 
   static showHideStatusBar({bool isHide = true}) {
-    if(!Platform.isIOS) {
-      if(isHide) {
+    if (!Platform.isIOS) {
+      if (isHide) {
         SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
       } else {
-        SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
+        SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+            overlays: SystemUiOverlay.values);
       }
     }
   }
+
+  static Future<void> playErrorFeedback() async {
+    final isSoundOn = Preference.shared.getBool(Preference.isSOUND) ?? true;
+    if (!isSoundOn) {
+      return;
+    }
+
+    await effectPlayer.stop();
+    await effectPlayer.play(AssetSource(alertAudio));
+  }
+
   static getProductId() {
     if (Platform.isAndroid) {
       return Constant.productIdAndroid;

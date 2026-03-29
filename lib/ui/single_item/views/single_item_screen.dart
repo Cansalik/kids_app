@@ -14,7 +14,7 @@ class SingleItemScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         top: false,
-        bottom: true,
+        bottom: false,
         child: Stack(
           children: [
             Image.asset(

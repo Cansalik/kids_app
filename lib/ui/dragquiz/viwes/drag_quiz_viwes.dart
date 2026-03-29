@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kids_playroom/dialog/complete_dialog/complete_dialog_screen.dart';
@@ -20,8 +18,8 @@ class DragQuizScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopScope(
       canPop: true,
-      onPopInvokedWithResult: (didPop,result) {
-        if(didPop){
+      onPopInvokedWithResult: (didPop, result) {
+        if (didPop) {
           dragQuizController.setPreference();
         }
         // return Future.value(true);
@@ -51,14 +49,11 @@ class DragQuizScreen extends StatelessWidget {
             );
           }),
         ),
-
         body: SafeArea(
           top: false,
-          bottom:true ,
+          bottom: true,
           child: Column(
-            children: [
-              _quizWidget()
-            ],
+            children: [_quizWidget()],
           ),
         ),
       ),
@@ -91,7 +86,9 @@ _quizWidget() {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     _dragTarget(context, index: index),
-                    SizedBox(height: AppSizes.height_5_5,),
+                    SizedBox(
+                      height: AppSizes.height_5_5,
+                    ),
                     _nameText(index),
                     _draggableOptions(context, index: index)
                   ],
@@ -111,8 +108,7 @@ _animation(BuildContext context) {
     return Visibility(
       visible: logic.accept!,
       child: Container(
-          padding: EdgeInsets.only(
-              bottom: AppSizes.height_1),
+          padding: EdgeInsets.only(bottom: AppSizes.height_1),
           child: Image.asset(
               Constant.getAssetDragAnimation() + "animation_success.gif")),
     );
@@ -127,7 +123,7 @@ _nameText(int index) {
       curve: Curves.easeInOut,
       child: Text(
         logic.itemList[index].itemName!.toUpperCase().tr,
-        style:  TextStyle(
+        style: TextStyle(
             fontSize: AppFontSize.size_23,
             fontFamily: "Angella",
             fontWeight: FontWeight.w500,
@@ -141,10 +137,7 @@ _draggableOptions(BuildContext context, {int? index}) {
   return GetBuilder<DragQuizController>(builder: (logic) {
     return Container(
       margin: EdgeInsets.symmetric(
-          vertical: MediaQuery
-              .of(context)
-              .size
-              .height * 0.08),
+          vertical: MediaQuery.of(context).size.height * 0.08),
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -166,25 +159,16 @@ _draggableOptions(BuildContext context, {int? index}) {
                 data: logic.options[0],
                 feedback: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[0]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.25,
+                  height: MediaQuery.of(context).size.height * 0.25,
                 ),
                 childWhenDragging: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[0]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: Colors.transparent,
                 ),
                 child: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[0]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: logic.options[0] == logic.answer && logic.accept!
                       ? AppColor.transparent
                       : AppColor.white.withValues(alpha: 1),
@@ -205,25 +189,16 @@ _draggableOptions(BuildContext context, {int? index}) {
                 data: logic.options[1],
                 feedback: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[1]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.25,
+                  height: MediaQuery.of(context).size.height * 0.25,
                 ),
                 childWhenDragging: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[1]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: Colors.transparent,
                 ),
                 child: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[1]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: logic.options[1] == logic.answer && logic.accept!
                       ? AppColor.transparent
                       : AppColor.white.withValues(alpha: 1),
@@ -244,25 +219,16 @@ _draggableOptions(BuildContext context, {int? index}) {
                 data: logic.options[2],
                 feedback: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[2]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.25,
+                  height: MediaQuery.of(context).size.height * 0.25,
                 ),
                 childWhenDragging: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[2]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: Colors.transparent,
                 ),
                 child: Image.asset(
                   Constant.getAssetDrag() + "${logic.options[2]}.webp",
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height * 0.13,
+                  height: MediaQuery.of(context).size.height * 0.13,
                   color: logic.options[2] == logic.answer && logic.accept!
                       ? AppColor.transparent
                       : AppColor.white.withValues(alpha: 1),
@@ -275,8 +241,7 @@ _draggableOptions(BuildContext context, {int? index}) {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Visibility(
-                visible: logic.options[0] == logic.answer &&
-                    logic.showHint! ,
+                visible: logic.options[0] == logic.answer && logic.showHint!,
                 child: Transform.rotate(
                   angle: 3.14 / 7,
                   child: Transform.translate(
@@ -290,8 +255,7 @@ _draggableOptions(BuildContext context, {int? index}) {
                 ),
               ),
               Visibility(
-                visible: logic.options[1] == logic.answer &&
-                    logic.showHint! ,
+                visible: logic.options[1] == logic.answer && logic.showHint!,
                 child: Transform.translate(
                   offset: Offset(0, logic.animation!.value),
                   child: Image.asset(
@@ -302,8 +266,7 @@ _draggableOptions(BuildContext context, {int? index}) {
                 ),
               ),
               Visibility(
-                visible: logic.options[2] == logic.answer &&
-                    logic.showHint!,
+                visible: logic.options[2] == logic.answer && logic.showHint!,
                 child: Transform.rotate(
                   angle: -3.14 / 7,
                   child: Transform.translate(
@@ -331,54 +294,47 @@ _dragTarget(BuildContext context, {int? index}) {
         vertical: AppSizes.height_0_3,
       ),
       child: DragTarget(
-        builder: (BuildContext context,
-            List<dynamic> accepted,
-            List<dynamic> rejected,) {
+        builder: (
+          BuildContext context,
+          List<dynamic> accepted,
+          List<dynamic> rejected,
+        ) {
           return logic.subId != 17
               ? Image.asset(
-            Constant.getAssetDrag() +
-                "${logic.itemList[index!].itemImage}.webp",
-            height: MediaQuery
-                .of(context)
-                .size
-                .height * 0.25,
-            color: logic.accept!
-                ? AppColor.white.withValues(alpha: 1)
-                : AppColor.white.withValues(alpha: 0.5),
-            colorBlendMode: BlendMode.modulate,
-          )
+                  Constant.getAssetDrag() +
+                      "${logic.itemList[index!].itemImage}.webp",
+                  height: MediaQuery.of(context).size.height * 0.25,
+                  color: logic.accept!
+                      ? AppColor.white.withValues(alpha: 1)
+                      : AppColor.white.withValues(alpha: 0.5),
+                  colorBlendMode: BlendMode.modulate,
+                )
               : logic.accept!
-              ? Image.asset(
-            Constant.getAssetDrag() +
-                "${logic.itemList[index!].itemImage}.webp",
-            height: MediaQuery
-                .of(context)
-                .size
-                .height * 0.25,
-          )
-              : Container(
-            height: MediaQuery
-                .of(context)
-                .size
-                .height * 0.25,
-            decoration: BoxDecoration(
-                color: AppColor.blackShadow,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                      color: AppColor.black.withValues(alpha: 0.25),
-                      blurRadius: 8)
-                ]),
-            child: Center(
-              child: Text(
-                logic.itemList[index!].itemName!.toUpperCase(),
-                style: const TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 24,
-                    color: AppColor.white),
-              ),
-            ),
-          );
+                  ? Image.asset(
+                      Constant.getAssetDrag() +
+                          "${logic.itemList[index!].itemImage}.webp",
+                      height: MediaQuery.of(context).size.height * 0.25,
+                    )
+                  : Container(
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: AppColor.blackShadow,
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                                color: AppColor.black.withValues(alpha: 0.25),
+                                blurRadius: 8)
+                          ]),
+                      child: Center(
+                        child: Text(
+                          logic.itemList[index!].itemName!.toUpperCase(),
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: AppColor.white),
+                        ),
+                      ),
+                    );
         },
         onAcceptWithDetails: (data) async {
           print('onAcceptWithDetails');
@@ -386,13 +342,11 @@ _dragTarget(BuildContext context, {int? index}) {
           logic.update();
           MyApp.flutterTts.stop();
           if (logic.subId == 17 && logic.itemList[index!].itemName == "Half") {
-            Utils.textToSpeech(
-                logic.itemList[index].itemName! + "txtDollar".tr,
+            Utils.textToSpeech(logic.itemList[index].itemName! + "txtDollar".tr,
                 MyApp.flutterTts);
           } else if (logic.subId == 17 &&
               logic.itemList[index!].itemName == "Dollar") {
-            Utils.textToSpeech(
-                "txtOne".tr + logic.itemList[index].itemName!.tr,
+            Utils.textToSpeech("txtOne".tr + logic.itemList[index].itemName!.tr,
                 MyApp.flutterTts);
           } else {
             Utils.textToSpeech(
@@ -404,21 +358,21 @@ _dragTarget(BuildContext context, {int? index}) {
               logic.current = logic.current! + 1;
               logic.update();
               await logic.generateOptions(index + 1);
-                } else {
-                  showDialog( 
-                    context: context,
-                    builder: (context) {
-                      return CompleteDialog(restartFunction: () {
-                        Navigator.of(context).pop();
-                        logic.pageController!.jumpToPage(0);
-                        logic.current = 1;
-                        logic.update();
-                        logic.getDataFromDatabase();
-                      });
-                    },
-                  );
-                }
-             logic.accept = false;
+            } else {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return CompleteDialog(restartFunction: () {
+                    Navigator.of(context).pop();
+                    logic.pageController!.jumpToPage(0);
+                    logic.current = 1;
+                    logic.update();
+                    logic.getDataFromDatabase();
+                  });
+                },
+              );
+            }
+            logic.accept = false;
           });
         },
         onWillAcceptWithDetails: (data) {
@@ -429,6 +383,7 @@ _dragTarget(BuildContext context, {int? index}) {
             return true;
           } else {
             Debug.printLog("reject");
+            Utils.playErrorFeedback();
             return false;
           }
         },
@@ -436,6 +391,3 @@ _dragTarget(BuildContext context, {int? index}) {
     );
   });
 }
-
-
-

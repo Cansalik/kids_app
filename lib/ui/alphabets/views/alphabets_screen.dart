@@ -1,4 +1,3 @@
-
 import 'package:floodfill_image/floodfill_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,7 +11,6 @@ import 'package:kids_playroom/utils/utils.dart';
 
 class AlphabetsScreen extends StatelessWidget {
   const AlphabetsScreen({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +92,8 @@ _itemAlphabet(BuildContext context, int index) {
     children: [
       Container(
         margin: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.07),
-        child: Image.asset("assets/background/alpha_frame.webp",height: AppSizes.height_66),
+        child: Image.asset("assets/background/alpha_frame.webp",
+            height: AppSizes.height_66),
       ),
       Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -126,43 +125,56 @@ _colorPencils() {
 
 _alphabetColor(BuildContext context, int index) {
   return GetBuilder<AlphabetsController>(builder: (logic) {
+    final frameWidth = MediaQuery.of(context).size.width * 0.56;
+    final letterHeight = MediaQuery.of(context).size.height * 0.225;
+
     if (logic.isShow!) {
       MyApp.flutterTts.stop();
       Utils.textToSpeech(
           logic.alphabetsList![index].ttsText!, MyApp.flutterTts);
     }
     return Container(
-      margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.10),
-      child: FloodFillImage(
-        fillColor: logic.currentColor!,
-        avoidColor: const [Colors.transparent, Colors.black],
-        imageProvider: AssetImage(
-          Constant.getAssetDrag() +
-              "${logic.alphabetsList![index].alphaImage}.webp",
+      margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.055),
+      child: SizedBox(
+        width: frameWidth,
+        height: letterHeight,
+        child: Align(
+          alignment: Alignment.center,
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: FloodFillImage(
+              fillColor: logic.currentColor!,
+              avoidColor: const [Colors.transparent, Colors.black],
+              imageProvider: AssetImage(
+                Constant.getAssetDrag() +
+                    "${logic.alphabetsList![index].alphaImage}.webp",
+              ),
+              height: letterHeight.toInt(),
+              onFloodFillEnd: (value) async {
+                logic.isShow = true;
+                logic.update();
+                await Future.delayed(const Duration(milliseconds: 1500), () {
+                  if (index != logic.alphabetsList!.length - 1) {
+                    logic.pageController!.jumpToPage(index + 1);
+                    logic.isShow = false;
+                    logic.update();
+                  } else {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return CompleteDialog(restartFunction: () {
+                            Navigator.of(context).pop();
+                            logic.pageController!.jumpToPage(0);
+                            logic.isShow = false;
+                            logic.update();
+                          });
+                        });
+                  }
+                });
+              },
+            ),
+          ),
         ),
-        height: (MediaQuery.of(context).size.height * 0.25).toInt(),
-        onFloodFillEnd: (value) async {
-          logic.isShow = true;
-          logic.update();
-          await Future.delayed(const Duration(milliseconds: 1500), () {
-            if (index != logic.alphabetsList!.length - 1) {
-              logic.pageController!.jumpToPage(index + 1);
-              logic.isShow = false;
-              logic.update();
-            } else {
-              showDialog(
-                  context: context,
-                  builder: (context) {
-                    return CompleteDialog(restartFunction: () {
-                      Navigator.of(context).pop();
-                      logic.pageController!.jumpToPage(0);
-                      logic.isShow = false;
-                      logic.update();
-                    });
-                  });
-            }
-          });
-        },
       ),
     );
   });
@@ -170,6 +182,9 @@ _alphabetColor(BuildContext context, int index) {
 
 _alphabetObject(BuildContext context, int index) {
   return GetBuilder<AlphabetsController>(builder: (logic) {
+    final frameWidth = MediaQuery.of(context).size.width * 0.56;
+    final objectHeight = MediaQuery.of(context).size.height * 0.21;
+
     return AnimatedOpacity(
       opacity: !logic.isShow! ? 0.0 : 1.0,
       duration: const Duration(milliseconds: 800),
@@ -178,10 +193,14 @@ _alphabetObject(BuildContext context, int index) {
             EdgeInsets.only(bottom: MediaQuery.of(context).size.height * 0.075),
         child: Column(
           children: [
-            Image.asset(
-              Constant.getAssetDrag() +
-                  "${logic.alphabetsList![index].objectImage}.webp",
-              height: MediaQuery.of(context).size.height * 0.25,
+            SizedBox(
+              width: frameWidth,
+              height: objectHeight,
+              child: Image.asset(
+                Constant.getAssetDrag() +
+                    "${logic.alphabetsList![index].objectImage}.webp",
+                fit: BoxFit.contain,
+              ),
             ),
             SizedBox(height: 55)
           ],
