@@ -53,6 +53,8 @@
 // }
 import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
+import 'package:kids_playroom/database/database_helper.dart';
+import 'package:kids_playroom/database/tables/alphabets_table.dart';
 import 'package:kids_playroom/database/tables/item_table.dart';
 import 'package:kids_playroom/main.dart';
 import 'package:kids_playroom/ui/items/controllers/item_controller.dart';
@@ -61,8 +63,65 @@ import 'package:kids_playroom/utils/utils.dart';
 
 class SingleItemController extends GetxController {
   int index = Get.arguments;
+  final ItemController itemController = Get.find<ItemController>();
   List<ItemTable>? itemDataList = Get.find<ItemController>().itemList;
-  var showAnimation =  false;
+  List<AlphabetsTable> alphabetExamples = [];
+  var showAnimation = false;
+
+  bool get isAlphabetItem => itemController.subId == 1;
+
+  String? get currentAlphabetObjectAsset {
+    if (!isAlphabetItem ||
+        itemDataList == null ||
+        itemDataList!.isEmpty ||
+        alphabetExamples.isEmpty) {
+      return null;
+    }
+
+    final currentLetter = _extractAlphabetKey(itemDataList![index].itemNameTts);
+    if (currentLetter == null) {
+      return null;
+    }
+
+    AlphabetsTable? match;
+    for (final item in alphabetExamples) {
+      if (_extractAlphabetKey(item.ttsText) == currentLetter) {
+        match = item;
+        break;
+      }
+    }
+
+    if (match?.objectImage == null) {
+      return null;
+    }
+
+    return "${Constant.getAssetDrag()}${match!.objectImage}.webp";
+  }
+
+  String? _extractAlphabetKey(String? value) {
+    if (value == null || value.trim().isEmpty) {
+      return null;
+    }
+
+    final apostropheMatch =
+        RegExp(r"([A-Za-zÇĞİIÖŞÜçğıöşü])(?=')").firstMatch(value);
+    if (apostropheMatch != null) {
+      return apostropheMatch.group(1)?.toUpperCase();
+    }
+
+    final trailingLetterMatch =
+        RegExp(r"([A-Za-zÇĞİIÖŞÜçğıöşü])$").firstMatch(value.trim());
+    return trailingLetterMatch?.group(1)?.toUpperCase();
+  }
+
+  Future<void> _loadAlphabetExamples() async {
+    if (!isAlphabetItem) {
+      return;
+    }
+
+    alphabetExamples = await DataBaseHelper().getAlphabetsData();
+    update([Constant.idSingleItem]);
+  }
 
   void previousItem() {
     if (index > 0) {
@@ -99,7 +158,7 @@ class SingleItemController extends GetxController {
   @override
   void onInit() {
     showAnimation = !showAnimation;
-
+    _loadAlphabetExamples();
     super.onInit();
   }
 }

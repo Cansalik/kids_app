@@ -17,25 +17,25 @@ static const languageTr = "tr";
 
 
 
-  static const String shareLink = "Add your app url here";
+  static const String shareLink = "https://play.google.com/store/apps/details?id=com.kidsplayroom.app";
 
-  static const emailPath = 'Add your email address here';
+  static const emailPath = 'support@example.com';
 
-  static String privacyPolicyURL = "Add your privacy policy link here";
+  static String privacyPolicyURL = "https://example.com/privacy-policy";
 
-  static String googlePlayIdentifier = "Add your googlePlayIdentifier here";
-  static String appStoreIdentifier = "Add your appStoreIdentifier here";
+  static String googlePlayIdentifier = "com.kidsplayroom.app";
+  static String appStoreIdentifier = "0000000000";
 
   /// Terms & condition URL
-  static const termsAndConditionURL = " Add your terms and conditions URL here";
+  static const termsAndConditionURL = "https://example.com/terms";
 
 
-  static const String monthlySubscriptionId = "Add your monthly subscription id here which should be same for both android and iOS";
-  static const String yearlySubscriptionId = "Add your yearly subscription id here which should be same for both android and iOS";
+  static const String monthlySubscriptionId = "kids_playroom_monthly";
+  static const String yearlySubscriptionId = "kids_playroom_yearly";
 
   /// In-App Purchase
-  static const String productIdiOS = "Add your Product ID here for iOS"; /// 'Your Plan ID (Product ID iOS)';
-  static const String productIdAndroid = "Add your Product ID here for Android"; /// 'Your Plan ID (Product ID Android)';
+  static const String productIdiOS = "kids_playroom_monthly"; /// 'Your Plan ID (Product ID iOS)';
+  static const String productIdAndroid = "kids_playroom_monthly"; /// 'Your Plan ID (Product ID Android)';
 
 
   static getAsset() => "assets/";
@@ -113,7 +113,6 @@ static const languageTr = "tr";
 
 
 }
-
 
 
 
