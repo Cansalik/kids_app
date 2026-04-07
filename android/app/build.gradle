@@ -1,17 +1,17 @@
-def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file("key.properties")
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-}
-
 plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
-    namespace "com.kidsplayroom.app"
+    namespace "com.nesetcansalik.kidspreschool.app"
     compileSdk 36
     ndkVersion "27.0.12077973"
 
@@ -29,7 +29,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.kidsplayroom.app"
+        applicationId "com.nesetcansalik.kidspreschool.app"
         minSdkVersion flutter.minSdkVersion
         targetSdk 36
         versionCode flutter.versionCode.toInteger()

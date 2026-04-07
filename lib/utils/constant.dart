@@ -19,11 +19,11 @@ static const languageTr = "tr";
 
   static const String shareLink = "https://play.google.com/store/apps/details?id=com.kidsplayroom.app";
 
-  static const emailPath = 'support@example.com';
+  static const emailPath = 'neset.salik@gmail.com';
 
   static String privacyPolicyURL = "https://example.com/privacy-policy";
 
-  static String googlePlayIdentifier = "com.kidsplayroom.app";
+  static String googlePlayIdentifier = "com.nesetcansalik.kidspreschool.app";
   static String appStoreIdentifier = "0000000000";
 
   /// Terms & condition URL
