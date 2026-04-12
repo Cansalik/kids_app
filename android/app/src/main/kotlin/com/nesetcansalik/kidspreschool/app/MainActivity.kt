@@ -1,4 +1,4 @@
-package com.kidsplayroom.app
+package com.nesetcansalik.kidspreschool.app
 
 import io.flutter.embedding.android.FlutterActivity
 
