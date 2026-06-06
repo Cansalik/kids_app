@@ -192,13 +192,17 @@ class QuizController extends GetxController {
 
     txtCurrentColor = txtColors![itemIndex];
 
-    allQuestionsList[itemIndex].isTrue
-        ? Utils.showToast(context, "Doğru Cevap")
-        : Utils.showToast(context, "Yanlış Cevap");
     MyApp.flutterTts.stop();
-    allQuestionsList[itemIndex].isTrue
-        ? Utils.textToSpeech("Doğru Cevap", MyApp.flutterTts)
-        : Utils.textToSpeech("Yanlış Cevap", MyApp.flutterTts);
+
+    if (allQuestionsList[itemIndex].isTrue) {
+      Utils.textToSpeech("Doğru Cevap", MyApp.flutterTts);
+      Future.delayed(const Duration(milliseconds: 1250), () {
+        onClickNext();
+      });
+    } else {
+      Utils.textToSpeech("Yanlış Cevap", MyApp.flutterTts);
+    }
+
     update([Constant.idColor]);
   }
 }
