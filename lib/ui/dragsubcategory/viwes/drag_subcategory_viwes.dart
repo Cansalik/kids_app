@@ -56,7 +56,6 @@ class DragSubcategoryScreen extends StatelessWidget {
 
 _categoryWidget() {
   return GetBuilder<DragSubcategoryControllers>(builder: (logic) {
-    print(logic.categoryList?.length);
     return Expanded(
       child: GridView.builder(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),

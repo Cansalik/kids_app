@@ -74,7 +74,6 @@ class ProVersionScreen extends StatelessWidget {
                                             InkWell(
                                               onTap: () {
                                                 Get.back();
-                                                print("object");
                                               },
                                               child: Image.asset(
                                                   Constant.getAssetIcons() +
@@ -242,7 +241,6 @@ class ProVersionScreen extends StatelessWidget {
         child: TextButton(
           onPressed: () {
             logic.onPurchaseClick();
-            print("object");
           },
           style: ButtonStyle(
             shape: WidgetStateProperty.all<RoundedRectangleBorder>(

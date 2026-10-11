@@ -59,7 +59,15 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-Future<InitializationStatus> _initGoogleMobileAds() {
+Future<InitializationStatus> _initGoogleMobileAds() async {
+  /// Çocuklara yönelik uygulama: Google Play Aileler politikası gereği
+  /// reklamlar çocuklara uygun (child-directed, G) olarak işaretlenir.
+  await MobileAds.instance.updateRequestConfiguration(
+    RequestConfiguration(
+      tagForChildDirectedTreatment: TagForChildDirectedTreatment.yes,
+      maxAdContentRating: MaxAdContentRating.g,
+    ),
+  );
   return MobileAds.instance.initialize();
 }
 
@@ -85,8 +93,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     if (isMusic!) {
       Utils.playAudio();
     }
-    _initGoogleMobileAds();
-
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Utils.initTts(MyApp.flutterTts);
+    });
     super.initState();
   }
 

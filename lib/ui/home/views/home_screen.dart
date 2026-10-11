@@ -109,7 +109,6 @@ class _HomeScreenState extends State<HomeScreen> {
         builder: (logic) {
           return InkWell(
             onTap: () async {
-              print("::::::::::::::${categoryList.categoryImage}");
               if (logic.interstitialAd != null &&
                   logic.isInterstitialAdLoaded) {
                 logic.showAd();

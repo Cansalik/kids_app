@@ -228,7 +228,6 @@ class PaintController extends GetxController {
       Directory generalDownloadDir = Platform.isIOS ? await getApplicationDocumentsDirectory() : Directory('/storage/emulated/0/Download');
       String path = generalDownloadDir.path;
       File file = File('$path/${"txtAppName".tr}_${DateTime.now().millisecondsSinceEpoch}.png');
-      print(file.path);
       await file.writeAsBytes(pngBytes!, flush: true);
       Utils.showToast(context, "txtImageSaved".tr);
       // await GallerySaver.saveImage(path!,

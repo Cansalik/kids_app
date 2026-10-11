@@ -42,30 +42,20 @@ class Utils {
     audioPlayer.setReleaseMode(ReleaseMode.loop);
   }
 
-  static Future textToSpeech(String speakText, FlutterTts flutterTts) async {
-    bool value = Preference.shared.getBool(Preference.isSOUND) ?? true;
-    if (!value) {
-      await flutterTts.stop();
-      return;
-    }
+  /// Uygulamanın içeriği Türkçe olduğu için seslendirme her zaman Türkçedir.
+  static const String ttsLanguage = "tr-TR";
+  static Future<void>? _ttsSetup;
 
+  /// TTS ayarlarını (motor, dil, hız, ton) yalnızca bir kez yapar.
+  /// Birden çok yerden çağrılabilir; kurulum tek sefer çalışır.
+  static Future<void> initTts(FlutterTts flutterTts) {
+    return _ttsSetup ??= _setupTts(flutterTts);
+  }
+
+  static Future<void> _setupTts(FlutterTts flutterTts) async {
     try {
-      // Dil desteğini kontrol et
-      bool isTurkishAvailable = await flutterTts.isLanguageAvailable("tr-TR");
-      if (!isTurkishAvailable) {
-        debugPrint("TTS: tr-TR mevcut değil, tr deneniyor");
-        isTurkishAvailable = await flutterTts.isLanguageAvailable("tr");
-        if (isTurkishAvailable) {
-          await flutterTts.setLanguage("tr");
-        } else {
-          debugPrint("TTS: tr de mevcut değil, en-US kullanılıyor");
-          await flutterTts.setLanguage("en-US");
-        }
-      } else {
-        await flutterTts.setLanguage("tr-TR");
-      }
-
-      // Samsung cihazlarda Google TTS motorunu tercih et
+      // Samsung vb. cihazlarda Google TTS motorunu tercih et.
+      // Motor değişince dil sıfırlanabileceği için önce motor seçilir.
       if (Platform.isAndroid) {
         try {
           List<dynamic> engines = await flutterTts.getEngines;
@@ -77,19 +67,58 @@ class Utils {
         }
       }
 
+      // Türkçe ses yüklü olmasa bile İngilizceye geçilmez; Türkçe denenir.
+      bool isTurkishAvailable = false;
+      try {
+        isTurkishAvailable =
+            await flutterTts.isLanguageAvailable(ttsLanguage) == true ||
+                await flutterTts.isLanguageAvailable("tr") == true;
+      } catch (e) {
+        debugPrint("TTS dil kontrolü hatası: $e");
+      }
+      await flutterTts.setLanguage(ttsLanguage);
+
       await flutterTts.setVolume(1.0);
       await flutterTts.setPitch(1.0);
       await flutterTts.setSpeechRate(0.5);
-
-      // Konuşmayı başlat ve tamamlanmasını bekle
-      await flutterTts.speak(speakText);
       await flutterTts.awaitSpeakCompletion(true);
+
+      if (!isTurkishAvailable) {
+        _showTurkishVoiceWarningOnce();
+      }
+    } catch (e) {
+      debugPrint("TTS kurulum hatası: $e");
+    }
+  }
+
+  /// Cihazda Türkçe ses yoksa ebeveyne yalnızca bir kez bilgi verir.
+  static void _showTurkishVoiceWarningOnce() {
+    if (Preference.shared.getBool(Preference.ttsVoiceWarningShown) == true) {
+      return;
+    }
+    Preference.shared.setBool(Preference.ttsVoiceWarningShown, true);
+    Fluttertoast.showToast(
+      msg: "Seslendirme için telefonunuzun ayarlarından Türkçe ses paketini "
+          "yükleyin (Metin okuma / Konuşma ayarları).",
+      toastLength: Toast.LENGTH_LONG,
+      gravity: ToastGravity.BOTTOM,
+      textColor: AppColor.white,
+      fontSize: AppFontSize.size_13,
+    );
+  }
+
+  static Future textToSpeech(String speakText, FlutterTts flutterTts) async {
+    bool value = Preference.shared.getBool(Preference.isSOUND) ?? true;
+    if (!value) {
+      await flutterTts.stop();
+      return;
+    }
+
+    try {
+      await initTts(flutterTts);
+      await flutterTts.speak(speakText);
     } catch (e) {
       debugPrint("TTS Hatası: $e");
-      // Alternatif olarak ses dosyasını oynat veya kullanıcıya uyarı göster
-      // showToast için BuildContext gerekli, şimdilik log yeterli
-      // Kullanıcıya TTS ayarlarını kontrol ettir
-      debugPrint("TTS başarısız: Cihaz ayarlarından TTS motorunu ve dilini kontrol edin.");
     }
   }
 

@@ -27,7 +27,7 @@ class UpperLowerScreen extends StatelessWidget {
         ),
         title: GetBuilder<UpperLowerController>(builder: (logic) {
           return Text(
-            logic.title!.tr ?? "",
+            logic.title!.tr,
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,

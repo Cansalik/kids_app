@@ -212,7 +212,6 @@ dragTargets({int? pageIndex}) {
 
 dragabbles({int? pageIndex}) {
   return GetBuilder<MonthsDaysController>(builder: (logic) {
-    print("${logic.options.length}");
     return Expanded(
       child: GridView.builder(
           padding:

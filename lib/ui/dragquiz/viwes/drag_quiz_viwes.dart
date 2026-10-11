@@ -337,7 +337,6 @@ _dragTarget(BuildContext context, {int? index}) {
                     );
         },
         onAcceptWithDetails: (data) async {
-          print('onAcceptWithDetails');
           logic.accept = true;
           logic.update();
           MyApp.flutterTts.stop();
@@ -376,8 +375,6 @@ _dragTarget(BuildContext context, {int? index}) {
           });
         },
         onWillAcceptWithDetails: (data) {
-          print('onWillAcceptWithDetails ${data.data}');
-          print('onWillAcceptWithDetails ${logic.answer}');
           if (data.data == logic.answer) {
             Debug.printLog("accept");
             return true;

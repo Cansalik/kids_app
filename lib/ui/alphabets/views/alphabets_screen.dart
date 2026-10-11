@@ -29,7 +29,7 @@ class AlphabetsScreen extends StatelessWidget {
         ),
         title: GetBuilder<AlphabetsController>(builder: (logic) {
           return Text(
-            logic.title!.tr ?? "",
+            logic.title!.tr,
             style: TextStyle(
                 color: AppColor.colorGreen,
                 fontSize: AppFontSize.size_16,

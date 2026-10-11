@@ -26,6 +26,7 @@ class Preference {
 
 
   static const String isFirstTimeOpenApp = "IS_FIRST_TIME_OPEN_APP";
+  static const String ttsVoiceWarningShown = "TTS_VOICE_WARNING_SHOWN";
 
 
  /// ------------------ SINGLETON -----------------------

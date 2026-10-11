@@ -32,7 +32,6 @@ class ItemController extends GetxController {
 
   Future<void> getDataFromDatabase() async {
     itemList = await DataBaseHelper().getItemData(subId!);
-    print(":: ::: ::: $itemList");
     update([Constant.idItem]);
   }
 }

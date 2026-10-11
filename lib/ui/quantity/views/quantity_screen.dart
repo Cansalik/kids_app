@@ -180,16 +180,13 @@ _countOptions({int? pageIndex}) {
             itemBuilder: (BuildContext context, int index) {
               return InkWell(
                 onTap: () async {
-                  print("object");
                   if (!logic.accept!) {
-                    print("object${logic.accept}");
 
                     MyApp.flutterTts.stop();
                     Utils.textToSpeech(
                             logic.options[index].toString(), MyApp.flutterTts)
                         .then((value) async {
                       if (logic.options[index] == logic.countAnswer) {
-                        print("object::${logic.accept}");
 
                         logic.accept = true;
                         logic.update();

@@ -4,10 +4,7 @@ import 'package:get/get.dart';
 import 'package:kids_playroom/ui/settings/controller/settings_controller.dart';
 import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
-import 'package:kids_playroom/utils/debug.dart';
-import 'package:kids_playroom/utils/preference.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class SettingScreen extends StatelessWidget {
   final SettingsController settingsController = Get.find<SettingsController>();
@@ -60,7 +57,6 @@ class SettingScreen extends StatelessWidget {
                       value: logic.isSound!,
                       onChanged: (value) {
                         logic.sound(value);
-                        print(value);
                       },
                       activeTrackColor: AppColor.colorGreen,
                     ),
@@ -80,7 +76,6 @@ class SettingScreen extends StatelessWidget {
                       value: logic.isMusic!,
                       onChanged: (value) {
                         logic.music(value);
-                        print(value);
                       },
                       activeTrackColor: AppColor.colorGreen,
                     ),
@@ -109,6 +104,8 @@ class SettingScreen extends StatelessWidget {
     );
   }
 
+  // Premium aktif edildiğinde kullanılacak (Reklamları kaldır bölümü).
+  // ignore: unused_element
   _proSection() {
     return Container(
       padding: const EdgeInsets.all(20),

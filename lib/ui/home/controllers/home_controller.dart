@@ -54,7 +54,6 @@ class HomeController extends GetxController
 
   Future<void> getDataFromDatabase() async {
     categoryList = await DataBaseHelper().getCategoryData();
-    print(":: ::: ::: $categoryList");
     update([Constant.idHomePage]);
   }
 
@@ -84,7 +83,6 @@ class HomeController extends GetxController
 
 
   void _loadInterstitialAd() {
-    print("::::::object");
     InterstitialAd.load(
       adUnitId: AdHelper.interstitialAdUnitId,
       request: const AdRequest(),

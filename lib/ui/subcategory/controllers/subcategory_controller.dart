@@ -33,7 +33,6 @@ class SubCategoryController extends GetxController  {
 
   Future<void> getDataFromDatabase() async {
     subcategoryList = await DataBaseHelper().getSubCategoryData();
-    print(":: ::: ::: $subcategoryList");
     update([Constant.idSubCategory]);
   }
 }

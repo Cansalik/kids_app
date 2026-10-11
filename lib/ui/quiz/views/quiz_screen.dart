@@ -59,8 +59,7 @@ class QuizScreen extends StatelessWidget {
                                     onTap: () {
                                       MyApp.flutterTts.stop();
                                       Utils.textToSpeech(
-                                        trueItem.itemNameTts.toString().tr ??
-                                            "",
+                                        trueItem.itemNameTts.toString().tr,
                                         MyApp.flutterTts,
                                       );
                                     },

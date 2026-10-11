@@ -115,7 +115,6 @@ class DataBaseHelper {
       for (var answer in maps) {
         var paintData = PaintTable.fromJson(answer);
         paintList.add(paintData);
-        print(":::::::${paintList[0].itemImage}");
       }
     }
     return paintList;

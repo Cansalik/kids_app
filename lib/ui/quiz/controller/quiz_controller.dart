@@ -95,7 +95,6 @@ class QuizController extends GetxController {
   void onClickPrev() {
     if (currentQuestionIndex > 0) {
       currentQuestionIndex--;
-      print(":::onClickPrev::$currentQuestionIndex");
       MyApp.flutterTts.stop();
       syncCurrentQuestion();
       initSound();
@@ -109,14 +108,12 @@ class QuizController extends GetxController {
         currentQuestionIndex < allQuestionsDataMap.length - 1) {
       currentQuestionIndex++;
 
-      print(":::onClickNext::$currentQuestionIndex");
       MyApp.flutterTts.stop();
       syncCurrentQuestion();
       initSound();
     } else {
       MyApp.flutterTts.stop();
       getRandomArray();
-      print(":::onClickNext::$currentQuestionIndex");
       initSound();
     }
 
