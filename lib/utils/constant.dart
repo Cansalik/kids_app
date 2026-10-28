@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class Constant {
@@ -14,8 +16,15 @@ class Constant {
 
   static const interstitialCount = 5;
 
-  static const String shareLink =
-      "https://play.google.com/store/apps/details?id=com.kidsplayroom.app";
+  /// "Videolu Öğrenim" bölümü iPhone'da gösterilsin mi?
+  /// Şimdilik kapalı. İleride bir uygulama GÜNCELLEMESİ ile true yapılabilir
+  /// (uzaktan/sunucudan açıp kapatmayın; Apple 2.3.1 kuralı).
+  static const bool showVideoSectionOnIOS = false;
+
+  /// Paylaşım bağlantısı: iPhone'da App Store, Android'de Google Play sayfası.
+  static String get shareLink => Platform.isIOS
+      ? "https://apps.apple.com/app/id$appStoreIdentifier"
+      : "https://play.google.com/store/apps/details?id=$googlePlayIdentifier";
 
   static const emailPath = 'neset.salik@gmail.com';
 

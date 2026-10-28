@@ -5,14 +5,13 @@ import 'package:kids_playroom/ui/settings/controller/settings_controller.dart';
 import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
+import 'package:kids_playroom/utils/utils.dart';
 
 class SettingScreen extends StatelessWidget {
   final SettingsController settingsController = Get.find<SettingsController>();
 
   @override
   Widget build(BuildContext context) {
-    settingsController.initRateMyApp(context);
-
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -90,6 +89,16 @@ class SettingScreen extends StatelessWidget {
                   image: Constant.getAssetIcons() + "ic_share.png",
                   onTap: () => logic.share(),
                   text: "txtShare".tr,
+                ),
+                Divider(
+                  color: AppColor.colorGray50,
+                  thickness: AppFontSize.size_1,
+                  height: 0,
+                ),
+                settingItem(
+                  image: Constant.getAssetIcons() + "ic_policy.png",
+                  onTap: () => Utils.urlLauncher(Constant.privacyPolicyURL),
+                  text: "txtPrivacyPolicy".tr,
                 ),
                 Divider(
                   color: AppColor.colorGray50,

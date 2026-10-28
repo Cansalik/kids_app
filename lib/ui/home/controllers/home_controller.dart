@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -54,6 +56,10 @@ class HomeController extends GetxController
 
   Future<void> getDataFromDatabase() async {
     categoryList = await DataBaseHelper().getCategoryData();
+    // iPhone'da "Videolu Öğrenim" (kategori 2) şimdilik gizli.
+    if (Platform.isIOS && !Constant.showVideoSectionOnIOS) {
+      categoryList?.removeWhere((c) => c.categoryId == 2);
+    }
     update([Constant.idHomePage]);
   }
 

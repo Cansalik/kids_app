@@ -1,6 +1,6 @@
 final Map<String, String> trTR = {
   /// TODO:-->> Uygulama Metinleri
-  'txtAppName': "Çocuk Oyun Alanı",
+  'txtAppName': "Okul Öncesi Eğitim",
   'txtApple': "Elma",
   'txtBall': "Top",
   'txtCat': "Kedi",
@@ -519,7 +519,7 @@ final Map<String, String> trTR = {
   'txtSendFeedback': "Geri Bildirim Gönder",
   'txtPrivacyPolicy': "Gizlilik Politikası",
   'txtShareDesc': "Uygulamayı Paylaş",
-  'txtKidsPreschoolLearning': "Çocuk Okul Öncesi Öğrenme",
+  'txtKidsPreschoolLearning': "Okul Öncesi Eğitim",
   'txtKidsPreschoolLearningFeedbackAndroid':
       "Çocuk Öğrenme Geri Bildirim Android",
   'txtKidsPreschoolLearningFeedbackIOS': "Çocuk Öğrenme Geri Bildirim IOS",

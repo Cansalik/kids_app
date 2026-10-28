@@ -164,9 +164,15 @@ class SettingsController extends GetxController {
   }
 
   Future<void> share() async {
+    final size = Get.size;
     await SharePlus.instance.share(
-     ShareParams(title:"txtShareDesc".tr + Constant.shareLink,
-      subject: "txtKidsPreschoolLearning".tr,)
+      ShareParams(
+        text: "Okul Öncesi Eğitim uygulamasını keşfedin: ${Constant.shareLink}",
+        subject: "txtKidsPreschoolLearning".tr,
+        // iPad'de paylaşım penceresinin konumu (iPhone'da etkisi yok)
+        sharePositionOrigin:
+            Rect.fromLTWH(0, 0, size.width, size.height / 2),
+      ),
     );
   }
 

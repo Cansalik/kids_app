@@ -2,7 +2,7 @@
 
 final Map<String, String> enUS = {
   /// TODO:-->> App Strings
-  'txtAppName': "Kids Play",
+  'txtAppName': "Preschool Education",
   'txtApple': "Apple",
   'txtBall': "Ball",
   'txtCat': "Cat",
