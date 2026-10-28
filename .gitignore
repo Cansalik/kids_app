@@ -62,3 +62,6 @@ key.properties
 
 # App Store ekran goruntuleri
 ekran_goruntuleri/
+
+# GitHub Pages dosyalari (ayri repoya yuklenir)
+github_site/

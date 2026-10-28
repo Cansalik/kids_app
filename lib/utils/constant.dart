@@ -28,7 +28,7 @@ class Constant {
 
   static const emailPath = 'neset.salik@gmail.com';
 
-  static String privacyPolicyURL = "https://doc-hosting.flycricket.io/okul-oncesi-privacy-policy/b2141074-0ee2-43e0-afeb-69f7b27cdbab/privacy";
+  static String privacyPolicyURL = "https://cansalik.github.io/okul-oncesi/gizlilik.html";
 
   static String googlePlayIdentifier = "com.nesetcansalik.kidspreschool.app";
   static String appStoreIdentifier = "6823739656";
