@@ -48,6 +48,13 @@ android {
         }
     }
 
+    // Release derlemesinde lint denetimini atla: Android Studio'nun eski
+    // Java'sı (17.0.6) Apple Silicon'da lint sırasında çöküyor.
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     buildTypes {
         release {
             signingConfig keystorePropertiesFile.exists()

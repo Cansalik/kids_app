@@ -33,7 +33,6 @@ import 'utils/debug.dart';
 Future<void> main() async {
   /// Initialize Shared Preference
   await Preference().instance();
-  await Future.delayed(const Duration(milliseconds: 2200));
 
   /// Initialize Google Mobile Ads
   await _initGoogleMobileAds();
