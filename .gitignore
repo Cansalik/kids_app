@@ -65,3 +65,7 @@ ekran_goruntuleri/
 
 # GitHub Pages dosyalari (ayri repoya yuklenir)
 github_site/
+reklam_gorselleri/
+
+# Reklam videolari (kopyalari reklam_gorselleri/ icinde)
+Reklam_*.mp4
