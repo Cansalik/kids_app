@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 
@@ -22,9 +21,9 @@ class Constant {
   static const bool showVideoSectionOnIOS = false;
 
   /// Paylaşım bağlantısı: iPhone'da App Store, Android'de Google Play sayfası.
-  static String get shareLink => Platform.isIOS
-      ? "https://apps.apple.com/app/id$appStoreIdentifier"
-      : "https://play.google.com/store/apps/details?id=$googlePlayIdentifier";
+  /// Açan kişinin telefonuna göre App Store'a ya da Google Play'e yönlendirir.
+  static const String shareLink =
+      "https://cansalik.github.io/okul-oncesi/indir.html";
 
   static const emailPath = 'neset.salik@gmail.com';
 

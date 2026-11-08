@@ -22,6 +22,10 @@ class DataBaseHelper {
 
   DataBaseHelper.internal();
 
+  /// assets/database/KidsPlayroom.db içindeki PRAGMA user_version değeri.
+  /// Veritabanı her güncellendiğinde ikisi birlikte 1 artırılmalı.
+  static const int assetDbVersion = 1;
+
   Future<Database> get db async {
     if (_db != null) return _db!;
     _db = await init();
@@ -34,6 +38,25 @@ class DataBaseHelper {
     String dbPathKidsAllInOne = path.join(dbPath, "KidsPlayroom.db");
 
     bool dbExistsEnliven = await io.File(dbPathKidsAllInOne).exists();
+
+    // Uygulamayla gelen veritabanı güncellendiyse (user_version arttıysa)
+    // eski kopyayı sil ve yenisini kopyala. Uygulama veritabanına yazmadığı
+    // için kullanıcı verisi kaybolmaz.
+    if (dbExistsEnliven) {
+      try {
+        final existing = await openDatabase(dbPathKidsAllInOne, readOnly: true);
+        final result = await existing.rawQuery('PRAGMA user_version');
+        final currentVersion = (result.first.values.first as int?) ?? 0;
+        await existing.close();
+        if (currentVersion < assetDbVersion) {
+          await deleteDatabase(dbPathKidsAllInOne);
+          dbExistsEnliven = false;
+        }
+      } catch (_) {
+        await deleteDatabase(dbPathKidsAllInOne);
+        dbExistsEnliven = false;
+      }
+    }
 
     if (!dbExistsEnliven) {
       ByteData data = await rootBundle

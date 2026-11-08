@@ -404,6 +404,8 @@ class CountingScreen extends StatelessWidget {
             logic.accept = true;
 
             await Future.delayed(const Duration(milliseconds: 2280), () {
+              // Ekran kapandıysa (geri tuşu) devam etme.
+              if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
               if (index != logic.totalQue! - 1) {
                 logic.pageController!.jumpToPage(index! + 1);
 

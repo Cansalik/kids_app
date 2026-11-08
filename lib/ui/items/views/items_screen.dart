@@ -10,6 +10,7 @@ import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class ItemScreen extends StatelessWidget {
   ItemScreen({super.key});
@@ -83,7 +84,7 @@ class ItemScreen extends StatelessWidget {
         Get.toNamed(AppRoutes.singleItem, arguments: index);
         MyApp.flutterTts.stop();
         Utils.textToSpeech(
-            itemList.itemNameTts!.tr.toLowerCase(), MyApp.flutterTts);
+            itemList.itemNameTts!.tr.toLowerTr(), MyApp.flutterTts);
       },
       child: FadeInUp(
         child: Container(

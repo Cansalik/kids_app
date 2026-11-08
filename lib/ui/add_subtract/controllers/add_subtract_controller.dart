@@ -30,7 +30,7 @@ class AddSubtractController extends GetxController {
     getDataFromArgs();
     generateNumbers();
     MyApp.flutterTts.stop();
-     Utils.textToSpeech(title!, MyApp.flutterTts);
+     Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     super.onInit();
   }
 

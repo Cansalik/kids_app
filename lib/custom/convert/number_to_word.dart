@@ -100,6 +100,6 @@ class NumberToWord {
           : ''; //ones
     }
 
-    return str;
+    return str.trim();
   }
 }

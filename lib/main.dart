@@ -1,7 +1,6 @@
 // ignore_for_file: implementation_imports
 
 import 'dart:async';
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -17,13 +16,6 @@ import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/preference.dart';
 import 'package:kids_playroom/utils/utils.dart';
-
-/// ignore: depend_on_referenced_packages
-import 'package:in_app_purchase_storekit/src/store_kit_wrappers/sk_payment_queue_wrapper.dart'
-    show SKPaymentQueueWrapper;
-
-/// ignore: depend_on_referenced_packages
-import 'package:in_app_purchase_storekit/src/store_kit_wrappers/sk_payment_transaction_wrappers.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -44,15 +36,6 @@ Future<void> main() async {
       const SystemUiOverlayStyle(statusBarColor: AppColor.transparent));
   // InAppPurchaseAndroidPlatformAddition.enablePendingPurchases();
 
-  if (Platform.isIOS) {
-    final transactions = await SKPaymentQueueWrapper().transactions();
-
-    for (SKPaymentTransactionWrapper element in transactions) {
-      await SKPaymentQueueWrapper().finishTransaction(element);
-      await SKPaymentQueueWrapper()
-          .finishTransaction(element.originalTransaction!);
-    }
-  }
   InAppPurchaseHelper().initStoreInfo();
 
   runApp(const MyApp());
@@ -110,6 +93,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         Utils.audioPlayer.resume();
       }
     } else {
+      // Uygulama arka plana geçince konuşmayı da durdur.
+      MyApp.flutterTts.stop();
       _getPreference();
       if (isMusic!) {
         Utils.audioPlayer.pause();
@@ -154,8 +139,18 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
           defaultTransition: Transition.fade,
           transitionDuration: const Duration(milliseconds: 50),
           initialRoute: AppRoutes.home,
+          navigatorObservers: [_TtsStopObserver()],
         );
       },
     );
+  }
+}
+
+/// Ekrandan geri çıkıldığında süren seslendirmeyi durdurur.
+class _TtsStopObserver extends NavigatorObserver {
+  @override
+  void didPop(Route route, Route? previousRoute) {
+    MyApp.flutterTts.stop();
+    super.didPop(route, previousRoute);
   }
 }

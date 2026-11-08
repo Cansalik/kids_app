@@ -167,8 +167,8 @@ class SettingsController extends GetxController {
     final size = Get.size;
     await SharePlus.instance.share(
       ShareParams(
-        text: "Okul Öncesi Eğitim uygulamasını keşfedin: ${Constant.shareLink}",
-        subject: "txtKidsPreschoolLearning".tr,
+        // Sadece bağlantı paylaşılır; iPhone'da ikonlu önizleme kartı olarak görünür.
+        uri: Uri.parse(Constant.shareLink),
         // iPad'de paylaşım penceresinin konumu (iPhone'da etkisi yok)
         sharePositionOrigin:
             Rect.fromLTWH(0, 0, size.width, size.height / 2),

@@ -7,6 +7,7 @@ import 'package:kids_playroom/main.dart';
 import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/debug.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class SpellingController extends GetxController{
   PageController? pageController =
@@ -82,7 +83,7 @@ update();
 
   getOptions(int index) {
     currentWord = spellingList![index].spelling!;
-    for (var rune in spellingList![index].spelling!.toLowerCase().runes) {
+    for (var rune in spellingList![index].spelling!.toLowerTr().runes) {
       var char = String.fromCharCode(rune);
       Debug.printLog(char);
       if (char != " ") {

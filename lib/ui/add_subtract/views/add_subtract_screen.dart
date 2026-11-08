@@ -217,6 +217,8 @@ dragTarget(BuildContext context, {int? index}) {
         logic.accept = true;
         logic.update();
         await Future.delayed(const Duration(milliseconds: 2280), () {
+          // Ekran kapandıysa (geri tuşu) devam etme.
+          if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
           if (index != logic.totalQuestions! - 1) {
             logic.pageController!.jumpToPage(index! + 1);
             logic.generateNumbers();

@@ -194,6 +194,8 @@ class QuizController extends GetxController {
     if (allQuestionsList[itemIndex].isTrue) {
       Utils.textToSpeech("Doğru Cevap", MyApp.flutterTts);
       Future.delayed(const Duration(milliseconds: 1250), () {
+        // Ekran kapandıysa (geri tuşu) devam etme.
+        if (isClosed) return;
         onClickNext();
       });
     } else {

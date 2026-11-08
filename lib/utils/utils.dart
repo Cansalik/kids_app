@@ -153,11 +153,13 @@ class Utils {
   }
 
   static Future<void> urlLauncher(String value) async {
-    var url = Uri.parse(value);
-    if (await canLaunchUrl(url)) {
-      launchUrl(url, mode: LaunchMode.externalApplication);
-    } else {
-      throw "Cannot load the page";
+    // canLaunchUrl, Android 11+ cihazlarda manifest'te <queries> olmadan
+    // false döndüğü için doğrudan açmayı deniyoruz.
+    final url = Uri.parse(value);
+    try {
+      await launchUrl(url, mode: LaunchMode.externalApplication);
+    } catch (e) {
+      debugPrint("Bağlantı açılamadı: $e");
     }
   }
 

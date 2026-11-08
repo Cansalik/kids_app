@@ -60,6 +60,7 @@ import 'package:kids_playroom/main.dart';
 import 'package:kids_playroom/ui/items/controllers/item_controller.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class SingleItemController extends GetxController {
   int index = Get.arguments;
@@ -106,12 +107,12 @@ class SingleItemController extends GetxController {
     final apostropheMatch =
         RegExp(r"([A-Za-zÇĞİIÖŞÜçğıöşü])(?=')").firstMatch(value);
     if (apostropheMatch != null) {
-      return apostropheMatch.group(1)?.toUpperCase();
+      return apostropheMatch.group(1)?.toUpperTr();
     }
 
     final trailingLetterMatch =
         RegExp(r"([A-Za-zÇĞİIÖŞÜçğıöşü])$").firstMatch(value.trim());
-    return trailingLetterMatch?.group(1)?.toUpperCase();
+    return trailingLetterMatch?.group(1)?.toUpperTr();
   }
 
   Future<void> _loadAlphabetExamples() async {
@@ -130,7 +131,7 @@ class SingleItemController extends GetxController {
       animateController;
       MyApp.flutterTts.stop();
       Utils.textToSpeech(
-        itemDataList![index].itemNameTts!.tr.toLowerCase(),
+        itemDataList![index].itemNameTts!.tr.toLowerTr(),
         MyApp.flutterTts,
       );
     }
@@ -145,7 +146,7 @@ class SingleItemController extends GetxController {
       animateController;
       MyApp.flutterTts.stop();
       Utils.textToSpeech(
-        itemDataList![index].itemNameTts!.tr.toLowerCase(),
+        itemDataList![index].itemNameTts!.tr.toLowerTr(),
         MyApp.flutterTts,
       );
     }

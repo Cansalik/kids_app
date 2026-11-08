@@ -88,20 +88,27 @@ class HomeController extends GetxController
   }
 
 
+  int _interstitialRetry = 0;
+
   void _loadInterstitialAd() {
     InterstitialAd.load(
       adUnitId: AdHelper.interstitialAdUnitId,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
+          _interstitialRetry = 0;
           ad.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
               ad.dispose();
+              _clearInterstitial();
+              // Android'de reklam için gizlenen durum çubuğunu geri getir.
+              Utils.showHideStatusBar(isHide: false);
               _loadInterstitialAd();
             },
             onAdFailedToShowFullScreenContent: (ad, error) {
               ad.dispose();
-
+              _clearInterstitial();
+              Utils.showHideStatusBar(isHide: false);
               _loadInterstitialAd();
             },
           );
@@ -113,18 +120,37 @@ class HomeController extends GetxController
         },
         onAdFailedToLoad: (err) {
           Debug.printLog('Failed to load an interstitial ad: ${err.message}');
+          // Yükleme başarısız olursa artan aralıklarla tekrar dene (en çok 5 kez).
+          if (_interstitialRetry < 5) {
+            _interstitialRetry++;
+            Future.delayed(Duration(seconds: 30 * _interstitialRetry), () {
+              if (!isClosed) _loadInterstitialAd();
+            });
+          }
         },
       ),
     );
   }
 
+  /// Gösterilmiş/kapatılmış reklam tekrar kullanılmasın.
+  void _clearInterstitial() {
+    interstitialAd = null;
+    isInterstitialAdLoaded = false;
+    update([Constant.idHomePage]);
+  }
+
   showAd() async {
     if (interstitialAd != null &&
+        isInterstitialAdLoaded &&
         Preference.shared.getInterstitialAdCount() %
                 Constant.interstitialCount ==
             0) {
+      final ad = interstitialAd!;
+      // Aynı reklam iki kez gösterilmesin.
+      interstitialAd = null;
+      isInterstitialAdLoaded = false;
       Utils.showHideStatusBar();
-      await interstitialAd!.show();
+      await ad.show();
     }
     Preference.shared
         .setInterstitialAdCount(Preference.shared.getInterstitialAdCount() + 1);

@@ -166,6 +166,8 @@ update();
         accept = true;
 update();
       await Future.delayed(const Duration(milliseconds: 2280), () {
+        // Ekran kapandıysa (geri tuşu) devam etme.
+        if (isClosed || !context.mounted || !(pageController?.hasClients ?? false)) return;
         if (pageIndex != totalQue! - 1) {
           pageController!.jumpToPage(pageIndex! + 1);
             accept = false;

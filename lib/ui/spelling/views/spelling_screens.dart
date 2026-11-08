@@ -10,6 +10,7 @@ import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/debug.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class SpellingScreen extends StatelessWidget {
   const SpellingScreen({super.key});
@@ -98,19 +99,23 @@ _itemSpelling(BuildContext context, int pageIndex) {
 
 image(BuildContext context, int pageIndex) {
   return GetBuilder<SpellingController>(builder: (logic) {
+    // Uzun kelimelerde harf kutuları 3-4 satıra çıkıyor; kutuların ekrana
+    // sığması (ve dokunulabilmesi) için resim çerçevesini küçült.
+    final int letterCount = logic.spelling?.length ?? 0;
+    final double frameFactor =
+        letterCount <= 12 ? 0.43 : (letterCount <= 18 ? 0.32 : 0.24);
+    final double frameHeight =
+        MediaQuery.of(context).size.height * frameFactor;
     return Stack(
       alignment: Alignment.center,
       children: [
         Image.asset(
           "assets/background/spelling_frame.webp",
-          height: MediaQuery
-              .of(context)
-              .size
-              .height * 0.43,
+          height: frameHeight,
         ),
         Image.asset(
             Constant.getAssetDrag()+"${logic.spellingList![pageIndex].image}.webp",
-            height: 230)
+            height: letterCount <= 12 ? 230 : frameHeight * 0.6)
       ],
     );
   });
@@ -152,7 +157,7 @@ dragTargets(BuildContext context, int pageIndex) {
                               BorderRadius.all(Radius.circular(5))),
                           child: Center(
                             child: Text(
-                              logic.spelling![index].toUpperCase(),
+                              logic.spelling![index].toUpperTr(),
                               style: const TextStyle(
                                   color: AppColor.white, fontSize: 24),
                             ),
@@ -189,7 +194,7 @@ dragTargets(BuildContext context, int pageIndex) {
                                   BorderRadius.all(Radius.circular(5))),
                               child: Center(
                                 child: Text(
-                                  logic.spelling![index].toUpperCase(),
+                                  logic.spelling![index].toUpperTr(),
                                   style: const TextStyle(
                                       color: AppColor.white, fontSize: 24),
                                 ),
@@ -244,7 +249,7 @@ draggables(BuildContext context, int pageIndex) {
                           const BorderRadius.all(Radius.circular(5))),
                       child: Center(
                         child: Text(
-                          logic.letters![logic.shuffled![index]]!.toUpperCase(),
+                          logic.letters![logic.shuffled![index]]!.toUpperTr(),
                           style:
                           const TextStyle(color: AppColor.white, fontSize: 24),
                         ),
@@ -267,7 +272,7 @@ draggables(BuildContext context, int pageIndex) {
                     logic.currentIndex = index;
                     MyApp.flutterTts.stop();
                      Utils.textToSpeech(
-                        logic.letters![logic.shuffled![index]]!.toLowerCase(), MyApp.flutterTts);
+                        logic.letters![logic.shuffled![index]]!.toLowerTr(), MyApp.flutterTts);
                   },
                   child: logic.countOpt!.contains(index)
                       ? Container(
@@ -299,7 +304,7 @@ draggables(BuildContext context, int pageIndex) {
                         const BorderRadius.all(Radius.circular(5))),
                     child: Center(
                       child: AutoSizeText(
-                        logic.letters![logic.shuffled![index]]!.toUpperCase(),
+                        logic.letters![logic.shuffled![index]]!.toUpperTr(),
                         style: const TextStyle(
                             color: AppColor.white, fontSize: 24),
                       ),

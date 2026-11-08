@@ -10,6 +10,7 @@ import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class QuantityScreen extends StatelessWidget {
   const QuantityScreen({super.key});
@@ -123,7 +124,7 @@ _quantityScreen() {
                               child: AutoSizeText(
                                 NumberToWord()
                                     .convert(logic.countAnswer!)
-                                    .toUpperCase(),
+                                    .toUpperTr(),
                                 style: const TextStyle(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,
@@ -194,6 +195,8 @@ _countOptions({int? pageIndex}) {
                         Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                         await Future.delayed(const Duration(milliseconds: 2280),
                             () {
+                          // Ekran kapandıysa (geri tuşu) devam etme.
+                          if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
                           if (pageIndex != logic.totalQue! - 1) {
                             logic.pageController!.jumpToPage(pageIndex! + 1);
                             logic.accept = false;

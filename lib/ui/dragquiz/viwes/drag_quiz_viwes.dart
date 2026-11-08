@@ -8,6 +8,7 @@ import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/debug.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class DragQuizScreen extends StatelessWidget {
   DragQuizScreen({super.key});
@@ -122,7 +123,7 @@ _nameText(int index) {
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
       child: Text(
-        logic.itemList[index].itemName!.toUpperCase().tr,
+        logic.itemList[index].itemName!.tr.toUpperTr(),
         style: TextStyle(
             fontSize: AppFontSize.size_23,
             fontFamily: "Angella",
@@ -327,7 +328,7 @@ _dragTarget(BuildContext context, {int? index}) {
                           ]),
                       child: Center(
                         child: Text(
-                          logic.itemList[index!].itemName!.toUpperCase(),
+                          logic.itemList[index!].itemName!.toUpperTr(),
                           style: const TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 24,
@@ -352,6 +353,8 @@ _dragTarget(BuildContext context, {int? index}) {
                 logic.itemList[index!].itemName!.tr, MyApp.flutterTts);
           }
           await Future.delayed(const Duration(milliseconds: 2280), () async {
+            // Ekran kapandıysa (geri tuşu) devam etme.
+            if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
             if (index != logic.itemList.length - 1) {
               logic.pageController!.jumpToPage(index + 1);
               logic.current = logic.current! + 1;

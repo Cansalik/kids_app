@@ -154,6 +154,8 @@ _alphabetColor(BuildContext context, int index) {
                 logic.isShow = true;
                 logic.update();
                 await Future.delayed(const Duration(milliseconds: 1500), () {
+                  // Ekran kapandıysa (geri tuşu) devam etme.
+                  if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
                   if (index != logic.alphabetsList!.length - 1) {
                     logic.pageController!.jumpToPage(index + 1);
                     logic.isShow = false;

@@ -33,7 +33,7 @@ class CountingController extends GetxController {
   Future<void> onInit() async {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title, MyApp.flutterTts);
+    Utils.textToSpeech(title.tr, MyApp.flutterTts);
     getNumbers();
     getOptions(0);
     super.onInit();

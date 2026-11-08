@@ -15,7 +15,7 @@ class NumbersController extends GetxController {
   void onInit() {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title!, MyApp.flutterTts).then((value) =>
+    Utils.textToSpeech(title!.tr, MyApp.flutterTts).then((value) =>
         Utils.textToSpeech(NumberToWord().convert(current!), MyApp.flutterTts));
     super.onInit();
   }

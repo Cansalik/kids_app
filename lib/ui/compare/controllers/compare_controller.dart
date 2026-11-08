@@ -30,7 +30,7 @@ List<String> questions = ["Hangisi daha az?", "Hangisi daha fazla?"];
   void onInit() {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title!, MyApp.flutterTts);
+    Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     getOptions();
     super.onInit();
   }
@@ -80,6 +80,8 @@ List<String> questions = ["Hangisi daha az?", "Hangisi daha fazla?"];
   nextPage(BuildContext context,{int? index}) {
     Debug.printLog("index : $index --- que: ${totalQue! - 1}");
     return Future.delayed(const Duration(milliseconds: 3000), () {
+      // Ekran kapandıysa (geri tuşu) devam etme.
+      if (isClosed || !context.mounted || !(pageController?.hasClients ?? false)) return;
       if (index != totalQue! - 1) {
         pageController!.jumpToPage(index! + 1);
         getOptions();

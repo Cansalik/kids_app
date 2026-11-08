@@ -22,7 +22,7 @@ class TimeController extends GetxController {
   void onInit() {
     getDataFromArgs();
     MyApp.flutterTts.stop();
-    Utils.textToSpeech(title!, MyApp.flutterTts);
+    Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     generateTime();
     super.onInit();
   }

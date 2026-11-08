@@ -6,6 +6,7 @@ import 'package:kids_playroom/ui/numbers/controllers/numbers_controller.dart';
 import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/sizer_utils.dart';
+import 'package:kids_playroom/utils/turkish_case.dart';
 
 class NumbersScreen extends StatelessWidget {
   NumbersScreen({super.key});
@@ -108,7 +109,7 @@ _numScreenWidget() {
 _numText() {
   return GetBuilder<NumbersController>(builder: (logic) {
     return Text(
-      NumberToWord().convert(logic.current!).toUpperCase(),
+      NumberToWord().convert(logic.current!).toUpperTr(),
       style: const TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w500,

@@ -177,6 +177,8 @@ _dragTargets(int index, int pageIndex, BuildContext context) {
             }
             if (logic.count.length == 4) {
               await Future.delayed(const Duration(milliseconds: 1180), () {
+                // Ekran kapandıysa (geri tuşu) devam etme.
+                if (!context.mounted || !(logic.pageController?.hasClients ?? false)) return;
                 if (pageIndex != logic.totalQue! - 1) {
                   logic.pageController!.jumpToPage(pageIndex + 1);
                     logic.accept = false;
