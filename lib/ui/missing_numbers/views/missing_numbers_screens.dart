@@ -166,7 +166,7 @@ _dragabbles({int? pageIndex}) {
                   Debug.printLog("====true====");
                 }
                 if (logic.count.contains(logic.options[index]) == false) {
-                  MyApp.flutterTts.stop();
+                  Utils.stopSpeech(MyApp.flutterTts);
                   Utils.textToSpeech(logic.options[index].toString(), MyApp.flutterTts);
                 }
                   logic.isDrag = true;

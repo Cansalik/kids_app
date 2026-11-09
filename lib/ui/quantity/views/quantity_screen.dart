@@ -183,7 +183,7 @@ _countOptions({int? pageIndex}) {
                 onTap: () async {
                   if (!logic.accept!) {
 
-                    MyApp.flutterTts.stop();
+                    Utils.stopSpeech(MyApp.flutterTts);
                     Utils.textToSpeech(
                             logic.options[index].toString(), MyApp.flutterTts)
                         .then((value) async {
@@ -191,7 +191,7 @@ _countOptions({int? pageIndex}) {
 
                         logic.accept = true;
                         logic.update();
-                        MyApp.flutterTts.stop();
+                        Utils.stopSpeech(MyApp.flutterTts);
                         Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                         await Future.delayed(const Duration(milliseconds: 2280),
                             () {

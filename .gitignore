@@ -69,3 +69,7 @@ reklam_gorselleri/
 
 # Reklam videolari (kopyalari reklam_gorselleri/ icinde)
 Reklam_*.mp4
+
+# Seslendirme: API anahtari ve uretilen ham sesler
+tools/seslendirme/.elevenlabs_key
+tools/seslendirme/sesler/

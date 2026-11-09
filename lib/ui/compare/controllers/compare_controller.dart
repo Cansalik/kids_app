@@ -29,7 +29,7 @@ List<String> questions = ["Hangisi daha az?", "Hangisi daha fazla?"];
   @override
   void onInit() {
     getDataFromArgs();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     getOptions();
     super.onInit();
@@ -74,7 +74,7 @@ List<String> questions = ["Hangisi daha az?", "Hangisi daha fazla?"];
 
     options = opt.toList();
     options.shuffle();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(que!, MyApp.flutterTts);
   }
   nextPage(BuildContext context,{int? index}) {

@@ -126,7 +126,7 @@ class CountingScreen extends StatelessWidget {
       return Draggable(
         maxSimultaneousDrags: logic.accept! || logic.isDrag! ? 0 : 1,
         onDragStarted: () {
-          MyApp.flutterTts.stop();
+          Utils.stopSpeech(MyApp.flutterTts);
           Utils.textToSpeech(logic.options[0].toString(), MyApp.flutterTts);
           logic.isDrag = true;
           logic.update();
@@ -188,7 +188,7 @@ class CountingScreen extends StatelessWidget {
       return Draggable(
         maxSimultaneousDrags: logic.accept! || logic.isDrag! ? 0 : 1,
         onDragStarted: () {
-          MyApp.flutterTts.stop();
+          Utils.stopSpeech(MyApp.flutterTts);
           Utils.textToSpeech(logic.options[1].toString(), MyApp.flutterTts);
           logic.isDrag = true;
         },
@@ -246,7 +246,7 @@ class CountingScreen extends StatelessWidget {
       return Draggable(
         maxSimultaneousDrags: logic.accept! || logic.isDrag! ? 0 : 1,
         onDragStarted: () {
-          MyApp.flutterTts.stop();
+          Utils.stopSpeech(MyApp.flutterTts);
           Utils.textToSpeech(logic.options[2].toString(), MyApp.flutterTts);
           logic.isDrag = true;
         },
@@ -307,7 +307,7 @@ class CountingScreen extends StatelessWidget {
       return Draggable(
         maxSimultaneousDrags: logic.accept! || logic.isDrag! ? 0 : 1,
         onDragStarted: () {
-          MyApp.flutterTts.stop();
+          Utils.stopSpeech(MyApp.flutterTts);
           Utils.textToSpeech(logic.options[3].toString(), MyApp.flutterTts);
           logic.isDrag = true;
         },

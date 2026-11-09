@@ -162,10 +162,10 @@ _dragTargets(int index, int pageIndex, BuildContext context) {
             if (logic.count.length < 4) {
                 logic.count.add(data.data.toString());
                 logic.update();
-              MyApp.flutterTts.stop();
+              Utils.stopSpeech(MyApp.flutterTts);
               Utils.textToSpeech(logic.timeText[data.data]!, MyApp.flutterTts).then((value) {
                 if (logic.count.length == 4) {
-                  MyApp.flutterTts.stop();
+                  Utils.stopSpeech(MyApp.flutterTts);
                   Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
                 }
               });

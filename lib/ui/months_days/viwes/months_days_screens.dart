@@ -161,7 +161,7 @@ dragTargets({int? pageIndex}) {
                     logic.count.add(int.parse(data.data.toString()));
                     logic.update();
                 }
-                MyApp.flutterTts.stop();
+                Utils.stopSpeech(MyApp.flutterTts);
                 Utils.textToSpeech(logic.name[data.data]!.tr, MyApp.flutterTts).then((value) {
                   if (logic.count.length == logic.dragQue.length) {
                     Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
@@ -235,7 +235,7 @@ dragabbles({int? pageIndex}) {
               onDragStarted: () {
                 if (logic.count.contains(logic.map.keys.firstWhere(
                         (element) => logic.map[element] == logic.options[index]))) {
-                  MyApp.flutterTts.stop();
+                  Utils.stopSpeech(MyApp.flutterTts);
                   Utils.textToSpeech(logic.options[index].toString().tr, MyApp.flutterTts);
                 }
                   logic.isDrag = true;

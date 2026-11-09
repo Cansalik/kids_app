@@ -57,7 +57,7 @@ class QuizScreen extends StatelessWidget {
                             ? trueItem != null
                                 ? InkWell(
                                     onTap: () {
-                                      MyApp.flutterTts.stop();
+                                      Utils.stopSpeech(MyApp.flutterTts);
                                       Utils.textToSpeech(
                                         trueItem.itemNameTts.toString().tr,
                                         MyApp.flutterTts,
@@ -77,7 +77,7 @@ class QuizScreen extends StatelessWidget {
                                     children: [
                                       InkWell(
                                         onTap: () {
-                                          MyApp.flutterTts.stop();
+                                          Utils.stopSpeech(MyApp.flutterTts);
                                           Utils.textToSpeech(
                                             trueItem?.itemNameTts
                                                     .toString()

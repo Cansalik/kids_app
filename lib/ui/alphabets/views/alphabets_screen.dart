@@ -129,7 +129,7 @@ _alphabetColor(BuildContext context, int index) {
     final letterHeight = MediaQuery.of(context).size.height * 0.225;
 
     if (logic.isShow!) {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech(
           logic.alphabetsList![index].ttsText!, MyApp.flutterTts);
     }

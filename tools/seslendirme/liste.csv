@@ -1,0 +1,1002 @@
+dosya,anahtar,okunacak,kaynak
+yumusak_g.mp3,yumuşak g,Yumuşak G,Alfabe
+bak_ve_sec.mp3,bak ve seç,Bak ve Seç,CategoryTable
+boyama.mp3,boyama,Boyama,CategoryTable
+dinle_ve_tahmin_et.mp3,dinle ve tahmin et,Dinle ve Tahmin Et,CategoryTable
+haydi_ogrenmeye_baslayalim.mp3,haydi öğrenmeye başlayalım,Haydi Öğrenmeye Başlayalım,CategoryTable
+okul_oncesi_oyunlari.mp3,okul öncesi oyunları,Okul Öncesi Oyunları,CategoryTable
+video_ile_ogrenme.mp3,video ile öğrenme,Video ile Öğrenme,CategoryTable
+aylar.mp3,aylar,Aylar,DragCategoryTable
+buyuk_kucuk.mp3,büyük & küçük,Büyük & Küçük,DragCategoryTable
+eksik_sayilar.mp3,eksik sayılar,Eksik Sayılar,DragCategoryTable
+egitim.mp3,eğitim,Eğitim,DragCategoryTable
+gunler.mp3,günler,Günler,DragCategoryTable
+heceleme.mp3,heceleme,Heceleme,DragCategoryTable
+karsilastirma.mp3,karşılaştırma,Karşılaştırma,DragCategoryTable
+miktar.mp3,miktar,Miktar,DragCategoryTable
+sayma.mp3,sayma,Sayma,DragCategoryTable
+toplama.mp3,toplama,Toplama,DragCategoryTable
+zaman.mp3,zaman,Zaman,DragCategoryTable
+cikarma.mp3,çıkarma,Çıkarma,DragCategoryTable
+1_sent.mp3,1 sent,1 Sent,DragItemsTable
+10_sent.mp3,10 sent,10 Sent,DragItemsTable
+arti.mp3,artı,Artı,DragItemsTable
+at.mp3,at,At,DragItemsTable
+at_arabasi.mp3,at arabası,At Arabası,DragItemsTable
+ataclar.mp3,ataçlar,Ataçlar,DragItemsTable
+balkabagi.mp3,balkabağı,Balkabağı,DragItemsTable
+balikcil.mp3,balıkçıl,Balıkçıl,DragItemsTable
+buldozer.mp3,buldozer,Buldozer,DragItemsTable
+denizalti.mp3,denizaltı,Denizaltı,DragItemsTable
+deve_kusu.mp3,deve kuşu,Deve Kuşu,DragItemsTable
+dikdortgen_prizma.mp3,dikdörtgen prizma,Dikdörtgen Prizma,DragItemsTable
+dinozor.mp3,dinozor,Dinozor,DragItemsTable
+dolar.mp3,dolar,Dolar,DragItemsTable
+domuz.mp3,domuz,Domuz,DragItemsTable
+dosyalar.mp3,dosyalar,Dosyalar,DragItemsTable
+durian.mp3,durian,Durian,DragItemsTable
+dort_yaprakli_yonca.mp3,dört yapraklı yonca,Dört Yapraklı Yonca,DragItemsTable
+ejder_meyvesi.mp3,ejder meyvesi,Ejder Meyvesi,DragItemsTable
+ekskavator.mp3,ekskavatör,Ekskavatör,DragItemsTable
+esek.mp3,eşek,Eşek,DragItemsTable
+faks.mp3,faks,Faks,DragItemsTable
+fare.mp3,fare,Fare,DragItemsTable
+flamingo.mp3,flamingo,Flamingo,DragItemsTable
+flask.mp3,flask,Flask,DragItemsTable
+forklift.mp3,forklift,Forklift,DragItemsTable
+greyfurt.mp3,greyfurt,Greyfurt,DragItemsTable
+guava.mp3,guava,Guava,DragItemsTable
+half.mp3,half,Half,DragItemsTable
+halka.mp3,halka,Halka,DragItemsTable
+hindi.mp3,hindi,Hindi,DragItemsTable
+horoz.mp3,horoz,Horoz,DragItemsTable
+inek.mp3,inek,İnek,DragItemsTable
+itfaiye_araci.mp3,itfaiye aracı,İtfaiye Aracı,DragItemsTable
+jeep.mp3,jeep,Jeep,DragItemsTable
+kaplumbaga.mp3,kaplumbağa,Kaplumbağa,DragItemsTable
+kardinal_kusu.mp3,kardinal kuşu,Kardinal Kuşu,DragItemsTable
+kavun.mp3,kavun,Kavun,DragItemsTable
+kaz.mp3,kaz,Kaz,DragItemsTable
+kedi.mp3,kedi,Kedi,DragItemsTable
+kitaplar.mp3,kitaplar,Kitaplar,DragItemsTable
+koyun.mp3,koyun,Koyun,DragItemsTable
+kugu.mp3,kuğu,Kuğu,DragItemsTable
+kopek.mp3,köpek,Köpek,DragItemsTable
+leylek.mp3,leylek,Leylek,DragItemsTable
+marti.mp3,martı,Martı,DragItemsTable
+minibus.mp3,minibüs,Minibüs,DragItemsTable
+muz.mp3,muz,Muz,DragItemsTable
+nar.mp3,nar,Nar,DragItemsTable
+nar_bulbulu.mp3,nar bülbülü,Nar Bülbülü,DragItemsTable
+nickel.mp3,nickel,Nickel,DragItemsTable
+pastel_boyalar.mp3,pastel boyalar,Pastel Boyalar,DragItemsTable
+pelikan.mp3,pelikan,Pelikan,DragItemsTable
+penguen.mp3,penguen,Penguen,DragItemsTable
+polis_arabasi.mp3,polis arabası,Polis Arabası,DragItemsTable
+pusula.mp3,pusula,Pusula,DragItemsTable
+quarter.mp3,quarter,Quarter,DragItemsTable
+renkler.mp3,renkler,Renkler,DragItemsTable
+renkli_kalemler.mp3,renkli kalemler,Renkli Kalemler,DragItemsTable
+riksov.mp3,rikşov,Rikşov,DragItemsTable
+roket.mp3,roket,Roket,DragItemsTable
+saka_kusu.mp3,saka kuşu,Saka Kuşu,DragItemsTable
+savas_ucagi.mp3,savaş uçağı,Savaş Uçağı,DragItemsTable
+sinek_kusu.mp3,sinek kuşu,Sinek Kuşu,DragItemsTable
+skuter.mp3,skuter,Skuter,DragItemsTable
+su_matarasi.mp3,su matarası,Su Matarası,DragItemsTable
+sigin.mp3,sığın,Sığın,DragItemsTable
+tank.mp3,tank,Tank,DragItemsTable
+tavuk.mp3,tavuk,Tavuk,DragItemsTable
+tavsan.mp3,tavşan,Tavşan,DragItemsTable
+taxi.mp3,taxi,Taxi,DragItemsTable
+tekne.mp3,tekne,Tekne,DragItemsTable
+test_tubes.mp3,test tubes,Test tubes,DragItemsTable
+tibet_sigiri.mp3,tibet sığırı,Tibet Sığırı,DragItemsTable
+traktor.mp3,traktör,Traktör,DragItemsTable
+tukenmez_kalem.mp3,tükenmez kalem,Tükenmez Kalem,DragItemsTable
+uydu.mp3,uydu,Uydu,DragItemsTable
+ucurtma.mp3,uçurtma,Uçurtma,DragItemsTable
+vinc.mp3,vinç,Vinç,DragItemsTable
+yapistirici.mp3,yapıştırıcı,Yapıştırıcı,DragItemsTable
+yarasa.mp3,yarasa,Yarasa,DragItemsTable
+yarim_daire.mp3,yarım daire,Yarım Daire,DragItemsTable
+yerkure.mp3,yerküre,Yerküre,DragItemsTable
+yesil_elma.mp3,yeşil elma,Yeşil Elma,DragItemsTable
+yildiz_meyvesi.mp3,yıldız meyvesi,Yıldız Meyvesi,DragItemsTable
+uc_yaprakli_yonca.mp3,üç yapraklı yonca,Üç Yapraklı Yonca,DragItemsTable
+balon_joje.mp3,balon joje,Balon Joje,DragSpellingTable
+boya_renkleri.mp3,boya renkleri,Boya Renkleri,DragSpellingTable
+deney_tupleri.mp3,deney tüpleri,Deney Tüpleri,DragSpellingTable
+taksi.mp3,taksi,Taksi,DragSpellingTable
+yak.mp3,yak,Yak,DragSpellingTable
+yedigen.mp3,yedigen,Yedigen,DragSpellingTable
+harf_a.mp3,a,a,Harf
+harf_be.mp3,b,be,Harf
+harf_ce.mp3,c,ce,Harf
+harf_de.mp3,d,de,Harf
+harf_e.mp3,e,e,Harf
+harf_fe.mp3,f,fe,Harf
+harf_ge.mp3,g,ge,Harf
+harf_he.mp3,h,he,Harf
+harf_i.mp3,i,i,Harf
+harf_je.mp3,j,je,Harf
+harf_ke.mp3,k,ke,Harf
+harf_le.mp3,l,le,Harf
+harf_me.mp3,m,me,Harf
+harf_ne.mp3,n,ne,Harf
+harf_o.mp3,o,o,Harf
+harf_pe.mp3,p,pe,Harf
+harf_ku.mp3,q,kü,Harf
+harf_re.mp3,r,re,Harf
+harf_se.mp3,s,se,Harf
+harf_te.mp3,t,te,Harf
+harf_u.mp3,u,u,Harf
+harf_ve.mp3,v,ve,Harf
+harf_cift_ve.mp3,w,çift ve,Harf
+harf_iks.mp3,x,iks,Harf
+harf_ye.mp3,y,ye,Harf
+harf_ze.mp3,z,ze,Harf
+harf_ce_2.mp3,ç,çe,Harf
+harf_o_2.mp3,ö,ö,Harf
+harf_u_2.mp3,ü,ü,Harf
+harf_yumusak_ge.mp3,ğ,yumuşak ge,Harf
+harf_i_2.mp3,ı,ı,Harf
+harf_se_2.mp3,ş,şe,Harf
+1_mayis_emek_ve_dayanisma_gunu.mp3,1 mayıs emek ve dayanışma günü,1 Mayıs Emek ve Dayanışma Günü,ItemTable
+19_mayis_ataturk_u_anma_genclik_ve_spor_bayrami.mp3,"19 mayıs atatürk'ü anma, gençlik ve spor bayramı","19 Mayıs Atatürk'ü Anma, Gençlik ve Spor Bayramı",ItemTable
+23_nisan_ulusal_egemenlik_ve_cocuk_bayrami.mp3,23 nisan ulusal egemenlik ve çocuk bayramı,23 Nisan Ulusal Egemenlik ve Çocuk Bayramı,ItemTable
+29_ekim_cumhuriyet_bayrami.mp3,29 ekim cumhuriyet bayramı,29 Ekim Cumhuriyet Bayramı,ItemTable
+abd.mp3,abd,ABD,ItemTable
+ada.mp3,ada,Ada,ItemTable
+ahtapot.mp3,ahtapot,Ahtapot,ItemTable
+ahududu.mp3,ahududu,Ahududu,ItemTable
+akbaba.mp3,akbaba,Akbaba,ItemTable
+akordeon.mp3,akordeon,Akordeon,ItemTable
+akrep.mp3,akrep,Akrep,ItemTable
+almanya.mp3,almanya,Almanya,ItemTable
+alti.mp3,altı,Altı,ItemTable
+altigen.mp3,altıgen,Altıgen,ItemTable
+ambulans.mp3,ambulans,Ambulans,ItemTable
+anahtar.mp3,anahtar,Anahtar,ItemTable
+anakonda.mp3,anakonda,Anakonda,ItemTable
+ananas.mp3,ananas,Ananas,ItemTable
+antep_fistigi.mp3,antep fıstığı,Antep Fıstığı,ItemTable
+araba.mp3,araba,Araba,ItemTable
+aralik.mp3,aralık,Aralık,ItemTable
+arastirmaci.mp3,araştırmacı,Araştırmacı,ItemTable
+arjantin.mp3,arjantin,Arjantin,ItemTable
+arkadaslik_gunu.mp3,arkadaşlık günü,Arkadaşlık Günü,ItemTable
+armut.mp3,armut,Armut,ItemTable
+asker.mp3,asker,Asker,ItemTable
+aslan.mp3,aslan,Aslan,ItemTable
+atki.mp3,atkı,Atkı,ItemTable
+atin_a_si.mp3,atın a'sı,Atın A'sı,ItemTable
+avokado.mp3,avokado,Avokado,ItemTable
+avukat.mp3,avukat,Avukat,ItemTable
+avusturya.mp3,avusturya,Avusturya,ItemTable
+ay_cekirdegi.mp3,ay çekirdeği,Ay Çekirdeği,ItemTable
+ayak.mp3,ayak,Ayak,ItemTable
+ayak_bilegi.mp3,ayak bileği,Ayak Bileği,ItemTable
+ayak_parmagi.mp3,ayak parmağı,Ayak Parmağı,ItemTable
+ayakkabi.mp3,ayakkabı,Ayakkabı,ItemTable
+ayna.mp3,ayna,Ayna,ItemTable
+aynisefa.mp3,aynısefa,Aynısefa,ItemTable
+ayva.mp3,ayva,Ayva,ItemTable
+aycicegi.mp3,ayçiçeği,Ayçiçeği,ItemTable
+ayi.mp3,ayı,Ayı,ItemTable
+aciolcer.mp3,açıölçer,Açıölçer,ItemTable
+agackakan.mp3,ağaçkakan,Ağaçkakan,ItemTable
+agustos.mp3,ağustos,Ağustos,ItemTable
+agiz.mp3,ağız,Ağız,ItemTable
+asci.mp3,aşçı,Aşçı,ItemTable
+bacak.mp3,bacak,Bacak,ItemTable
+badem.mp3,badem,Badem,ItemTable
+badminton.mp3,badminton,Badminton,ItemTable
+bahcivan.mp3,bahçıvan,Bahçıvan,ItemTable
+bal_arisi.mp3,bal arısı,Bal Arısı,ItemTable
+baligin_b_si.mp3,balığın b'si,Balığın B'si,ItemTable
+bamya.mp3,bamya,Bamya,ItemTable
+banjo.mp3,banjo,Banjo,ItemTable
+bant_kesici.mp3,bant kesici,Bant Kesici,ItemTable
+bar.mp3,bar,Bar,ItemTable
+bardak.mp3,bardak,Bardak,ItemTable
+basketbol.mp3,basketbol,Basketbol,ItemTable
+bataklik.mp3,bataklık,Bataklık,ItemTable
+bati.mp3,batı,Batı,ItemTable
+baykus.mp3,baykuş,Baykuş,ItemTable
+bas_parmak.mp3,baş parmak,Baş Parmak,ItemTable
+begonvil.mp3,begonvil,Begonvil,ItemTable
+belcika.mp3,belçika,Belçika,ItemTable
+beyaz.mp3,beyaz,Beyaz,ItemTable
+beyzbol.mp3,beyzbol,Beyzbol,ItemTable
+bezelye.mp3,bezelye,Bezelye,ItemTable
+bes.mp3,beş,Beş,ItemTable
+besgen.mp3,beşgen,Beşgen,ItemTable
+bilardo.mp3,bilardo,Bilardo,ItemTable
+bilgisayar.mp3,bilgisayar,Bilgisayar,ItemTable
+bilim_insani.mp3,bilim insanı,Bilim İnsanı,ItemTable
+binicilik.mp3,binicilik,Binicilik,ItemTable
+bir.mp3,bir,Bir,ItemTable
+bisiklet.mp3,bisiklet,Bisiklet,ItemTable
+biskuvi.mp3,bisküvi,Bisküvi,ItemTable
+bizon.mp3,bizon,Bizon,ItemTable
+bornoz.mp3,bornoz,Bornoz,ItemTable
+bot.mp3,bot,Bot,ItemTable
+bowling.mp3,bowling,Bowling,ItemTable
+boya_fircasi.mp3,boya fırçası,Boya Fırçası,ItemTable
+boya_kalemi.mp3,boya kalemi,Boya Kalemi,ItemTable
+boynuzlu_antilop.mp3,boynuzlu antilop,Boynuzlu Antilop,ItemTable
+boynuzlu_gaga.mp3,boynuzlu gaga,Boynuzlu Gaga,ItemTable
+boyun.mp3,boyun,Boyun,ItemTable
+brezilya.mp3,brezilya,Brezilya,ItemTable
+brezilya_cevizi.mp3,brezilya cevizi,Brezilya Cevizi,ItemTable
+brokoli.mp3,brokoli,Brokoli,ItemTable
+bruksel_lahanasi.mp3,brüksel lahanası,Brüksel Lahanası,ItemTable
+bukalemun.mp3,bukalemun,Bukalemun,ItemTable
+bulut.mp3,bulut,Bulut,ItemTable
+burun.mp3,burun,Burun,ItemTable
+buz_pateni.mp3,buz pateni,Buz Pateni,ItemTable
+buzdagi.mp3,buzdağı,Buzdağı,ItemTable
+bogurtlen.mp3,böğürtlen,Böğürtlen,ItemTable
+bulbul.mp3,bülbül,Bülbül,ItemTable
+bildircin.mp3,bıldırcın,Bıldırcın,ItemTable
+bicak.mp3,bıçak,Bıçak,ItemTable
+cadilar_bayrami.mp3,cadılar bayramı,Cadılar Bayramı,ItemTable
+cankurtaran.mp3,cankurtaran,Cankurtaran,ItemTable
+ceket.mp3,ceket,Ceket,ItemTable
+cennet_kusu_cicegi.mp3,cennet kuşu çiçeği,Cennet Kuşu Çiçeği,ItemTable
+cep_telefonu.mp3,cep telefonu,Cep Telefonu,ItemTable
+cetvel.mp3,cetvel,Cetvel,ItemTable
+ceviz.mp3,ceviz,Ceviz,ItemTable
+cevizin_c_si.mp3,cevizin c'si,Cevizin C'si,ItemTable
+cezayir_meneksesi.mp3,cezayir menekşesi,Cezayir Menekşesi,ItemTable
+cips.mp3,cips,Cips,ItemTable
+cuma.mp3,cuma,Cuma,ItemTable
+cumartesi.mp3,cumartesi,Cumartesi,ItemTable
+cuzdan.mp3,cüzdan,Cüzdan,ItemTable
+daire.mp3,daire,Daire,ItemTable
+dalis.mp3,dalış,Dalış,ItemTable
+danimarka.mp3,danimarka,Danimarka,ItemTable
+davul.mp3,davul,Davul,ItemTable
+dag.mp3,dağ,Dağ,ItemTable
+defter.mp3,defter,Defter,ItemTable
+delgec.mp3,delgeç,Delgeç,ItemTable
+deniz.mp3,deniz,Deniz,ItemTable
+deniz_anasi.mp3,deniz anası,Deniz Anası,ItemTable
+deniz_aslani.mp3,deniz aslanı,Deniz Aslanı,ItemTable
+deniz_ati.mp3,deniz atı,Deniz Atı,ItemTable
+deniz_kaplumbagasi.mp3,deniz kaplumbağası,Deniz Kaplumbağası,ItemTable
+deniz_papagani.mp3,deniz papağanı,Deniz Papağanı,ItemTable
+deniz_samuru.mp3,deniz samuru,Deniz Samuru,ItemTable
+deniz_yildizi.mp3,deniz yıldızı,Deniz Yıldızı,ItemTable
+dik_ucgen.mp3,dik üçgen,Dik Üçgen,ItemTable
+dikdortgen.mp3,dikdörtgen,Dikdörtgen,ItemTable
+dikdortgenler_prizmasi.mp3,dikdörtgenler prizması,Dikdörtgenler Prizması,ItemTable
+dirsek.mp3,dirsek,Dirsek,ItemTable
+diz.mp3,diz,Diz,ItemTable
+dizustu_bilgisayar.mp3,dizüstü bilgisayar,Dizüstü Bilgisayar,ItemTable
+dis_hekimi.mp3,diş hekimi,Diş Hekimi,ItemTable
+disi_tavus_kusu.mp3,dişi tavus kuşu,Dişi Tavus Kuşu,ItemTable
+doktor.mp3,doktor,Doktor,ItemTable
+dokuz.mp3,dokuz,Dokuz,ItemTable
+dolma_kalem.mp3,dolma kalem,Dolma Kalem,ItemTable
+domates.mp3,domates,Domates,ItemTable
+dondurma.mp3,dondurma,Dondurma,ItemTable
+dondurmanin_d_si.mp3,dondurmanın d'si,Dondurmanın D'si,ItemTable
+dosya.mp3,dosya,Dosya,ItemTable
+dogu.mp3,doğu,Doğu,ItemTable
+dudaklar.mp3,dudaklar,Dudaklar,ItemTable
+dugong.mp3,dugong,Dugong,ItemTable
+duvar_ustasi.mp3,duvar ustası,Duvar Ustası,ItemTable
+dort.mp3,dört,Dört,ItemTable
+dunya.mp3,dünya,Dünya,ItemTable
+dunya_haritasi.mp3,dünya haritası,Dünya Haritası,ItemTable
+dugun_cicegi.mp3,düğün çiçeği,Düğün Çiçeği,ItemTable
+eczaci.mp3,eczacı,Eczacı,ItemTable
+ekim.mp3,ekim,Ekim,ItemTable
+ekmek.mp3,ekmek,Ekmek,ItemTable
+elbise.mp3,elbise,Elbise,ItemTable
+eldiven.mp3,eldiven,Eldiven,ItemTable
+elektrikci.mp3,elektrikçi,Elektrikçi,ItemTable
+elips.mp3,elips,Elips,ItemTable
+elma.mp3,elma,Elma,ItemTable
+elmanin_e_si.mp3,elmanın e'si,Elmanın E'si,ItemTable
+elmas.mp3,elmas,Elmas,ItemTable
+endonezya.mp3,endonezya,Endonezya,ItemTable
+erik.mp3,erik,Erik,ItemTable
+eriste.mp3,erişte,Erişte,ItemTable
+eskrim.mp3,eskrim,Eskrim,ItemTable
+etek.mp3,etek,Etek,ItemTable
+eylul.mp3,eylül,Eylül,ItemTable
+eskenar_dortgen.mp3,eşkenar dörtgen,Eşkenar Dörtgen,ItemTable
+fil.mp3,fil,Fil,ItemTable
+filin_f_si.mp3,filin f'si,Filin F'si,ItemTable
+filipinler.mp3,filipinler,Filipinler,ItemTable
+fincan.mp3,fincan,Fincan,ItemTable
+flut.mp3,flüt,Flüt,ItemTable
+fotografci.mp3,fotoğrafçı,Fotoğrafçı,ItemTable
+fransa.mp3,fransa,Fransa,ItemTable
+frenk_uzumu.mp3,frenk üzümü,Frenk Üzümü,ItemTable
+futbol.mp3,futbol,Futbol,ItemTable
+findik.mp3,fındık,Fındık,ItemTable
+firtina.mp3,fırtına,Fırtına,ItemTable
+firca.mp3,fırça,Fırça,ItemTable
+firinci.mp3,fırıncı,Fırıncı,ItemTable
+garson.mp3,garson,Garson,ItemTable
+gazete.mp3,gazete,Gazete,ItemTable
+gazeteci.mp3,gazeteci,Gazeteci,ItemTable
+gelincik.mp3,gelincik,Gelincik,ItemTable
+gemi.mp3,gemi,Gemi,ItemTable
+gergedan.mp3,gergedan,Gergedan,ItemTable
+geyik.mp3,geyik,Geyik,ItemTable
+gitar.mp3,gitar,Gitar,ItemTable
+glayol.mp3,glayöl,Glayöl,ItemTable
+golf.mp3,golf,Golf,ItemTable
+goril.mp3,goril,Goril,ItemTable
+gri.mp3,gri,Gri,ItemTable
+gokbilimci.mp3,gökbilimci,Gökbilimci,ItemTable
+gokkusagi.mp3,gökkuşağı,Gökkuşağı,ItemTable
+gol.mp3,göl,Göl,ItemTable
+gomlek.mp3,gömlek,Gömlek,ItemTable
+gonye.mp3,gönye,Gönye,ItemTable
+goz.mp3,göz,Göz,ItemTable
+gozluk.mp3,gözlük,Gözlük,ItemTable
+gozlukcu.mp3,gözlükçü,Gözlükçü,ItemTable
+gogus.mp3,göğüs,Göğüs,ItemTable
+gul.mp3,gül,Gül,ItemTable
+gun_batimi.mp3,gün batımı,Gün Batımı,ItemTable
+gun_dogumu.mp3,gün doğumu,Gün Doğumu,ItemTable
+guney.mp3,güney,Güney,ItemTable
+guney_afrika.mp3,güney afrika,Güney Afrika,ItemTable
+guneybati.mp3,güneybatı,Güneybatı,ItemTable
+guneydogu.mp3,güneydoğu,Güneydoğu,ItemTable
+gunesin_g_si.mp3,güneşin g'si,Güneşin G'si,ItemTable
+guvercin.mp3,güvercin,Güvercin,ItemTable
+hamam_bocegi.mp3,hamam böceği,Hamam Böceği,ItemTable
+hamburger.mp3,hamburger,Hamburger,ItemTable
+havuc.mp3,havuç,Havuç,ItemTable
+havucun_h_si.mp3,havuçun h'si,Havuçun H'si,ItemTable
+haziran.mp3,haziran,Haziran,ItemTable
+helikopter.mp3,helikopter,Helikopter,ItemTable
+hemsire.mp3,hemşire,Hemşire,ItemTable
+hesap_makinesi.mp3,hesap makinesi,Hesap Makinesi,ItemTable
+hilal.mp3,hilal,Hilal,ItemTable
+hindistan.mp3,hindistan,Hindistan,ItemTable
+hindistan_cevizi.mp3,hindistan cevizi,Hindistan Cevizi,ItemTable
+hokey.mp3,hokey,Hokey,ItemTable
+hollanda.mp3,hollanda,Hollanda,ItemTable
+horoz_ibigi.mp3,horoz ibiği,Horoz İbiği,ItemTable
+hortum.mp3,hortum,Hortum,ItemTable
+hurma.mp3,hurma,Hurma,ItemTable
+hakim.mp3,hâkim,Hâkim,ItemTable
+hirvatistan.mp3,hırvatistan,Hırvatistan,ItemTable
+ibibik.mp3,ibibik,İbibik,ItemTable
+iki.mp3,iki,İki,ItemTable
+ilkbahar.mp3,ilkbahar,İlkbahar,ItemTable
+incir.mp3,incir,İncir,ItemTable
+inegin_i_si.mp3,ineğin i'si,İneğin İ'si,ItemTable
+ingiltere.mp3,ingiltere,İngiltere,ItemTable
+ipekyolu_kusu.mp3,ipekyolu kuşu,İpekyolu Kuşu,ItemTable
+ispanya.mp3,ispanya,İspanya,ItemTable
+istiridye.mp3,istiridye,İstiridye,ItemTable
+isvec.mp3,isveç,İsveç,ItemTable
+italya.mp3,italya,İtalya,ItemTable
+itfaiye_kamyonu.mp3,itfaiye kamyonu,İtfaiye Kamyonu,ItemTable
+itfaiyeci.mp3,itfaiyeci,İtfaiyeci,ItemTable
+jaguar.mp3,jaguar,Jaguar,ItemTable
+jambon.mp3,jambon,Jambon,ItemTable
+japonya.mp3,japonya,Japonya,ItemTable
+jetonun_j_si.mp3,jetonun j'si,Jetonun J'si,ItemTable
+judo.mp3,judo,Judo,ItemTable
+kabak.mp3,kabak,Kabak,ItemTable
+kabak_cekirdegi.mp3,kabak çekirdeği,Kabak Çekirdeği,ItemTable
+kahkaha_cicegi.mp3,kahkaha çiçeği,Kahkaha Çiçeği,ItemTable
+kahve.mp3,kahve,Kahve,ItemTable
+kahverengi.mp3,kahverengi,Kahverengi,ItemTable
+kaju.mp3,kaju,Kaju,ItemTable
+kalemtiras.mp3,kalemtıraş,Kalemtıraş,ItemTable
+kalp.mp3,kalp,Kalp,ItemTable
+kambocya.mp3,kamboçya,Kamboçya,ItemTable
+kamyon.mp3,kamyon,Kamyon,ItemTable
+kanada.mp3,kanada,Kanada,ItemTable
+kanarya.mp3,kanarya,Kanarya,ItemTable
+kanepe.mp3,kanepe,Kanepe,ItemTable
+kanguru.mp3,kanguru,Kanguru,ItemTable
+kanna.mp3,kanna,Kanna,ItemTable
+kano.mp3,kano,Kano,ItemTable
+kaplan.mp3,kaplan,Kaplan,ItemTable
+kapi.mp3,kapı,Kapı,ItemTable
+kar_firtinasi.mp3,kar fırtınası,Kar Fırtınası,ItemTable
+kar_yagisi.mp3,kar yağışı,Kar Yağışı,ItemTable
+karanfil.mp3,karanfil,Karanfil,ItemTable
+karate.mp3,karate,Karate,ItemTable
+kare.mp3,kare,Kare,ItemTable
+karga.mp3,karga,Karga,ItemTable
+karides.mp3,karides,Karides,ItemTable
+karnabahar.mp3,karnabahar,Karnabahar,ItemTable
+karpuz.mp3,karpuz,Karpuz,ItemTable
+kartal.mp3,kartal,Kartal,ItemTable
+karinca.mp3,karınca,Karınca,ItemTable
+kasap.mp3,kasap,Kasap,ItemTable
+kasim.mp3,kasım,Kasım,ItemTable
+kayak.mp3,kayak,Kayak,ItemTable
+kaykay.mp3,kaykay,Kaykay,ItemTable
+kaynakci.mp3,kaynakçı,Kaynakçı,ItemTable
+kayisi.mp3,kayısı,Kayısı,ItemTable
+kazak.mp3,kazak,Kazak,ItemTable
+kagit_kiskaci.mp3,kağıt kıskacı,Kağıt Kıskacı,ItemTable
+kedinin_k_si.mp3,kedinin k'si,Kedinin K'si,ItemTable
+kelebek.mp3,kelebek,Kelebek,ItemTable
+keman.mp3,keman,Keman,ItemTable
+kemer.mp3,kemer,Kemer,ItemTable
+kertenkele.mp3,kertenkele,Kertenkele,ItemTable
+keseli_sican.mp3,keseli sıçan,Keseli Sıçan,ItemTable
+kilit.mp3,kilit,Kilit,ItemTable
+kiraz.mp3,kiraz,Kiraz,ItemTable
+kirpi.mp3,kirpi,Kirpi,ItemTable
+kitap.mp3,kitap,Kitap,ItemTable
+kitaplik.mp3,kitaplık,Kitaplık,ItemTable
+kivi.mp3,kivi,Kivi,ItemTable
+koala.mp3,koala,Koala,ItemTable
+kol.mp3,kol,Kol,ItemTable
+kolezyum.mp3,kolezyum,Kolezyum,ItemTable
+komodo_ejderi.mp3,komodo ejderi,Komodo Ejderi,ItemTable
+konga.mp3,konga,Konga,ItemTable
+koni.mp3,koni,Koni,ItemTable
+korno.mp3,korno,Korno,ItemTable
+kot_pantolon.mp3,kot pantolon,Kot Pantolon,ItemTable
+kova.mp3,kova,Kova,ItemTable
+kosu.mp3,koşu,Koşu,ItemTable
+kral_kobra.mp3,kral kobra,Kral Kobra,ItemTable
+kuafor.mp3,kuaför,Kuaför,ItemTable
+kulak.mp3,kulak,Kulak,ItemTable
+kumru.mp3,kumru,Kumru,ItemTable
+kurban_bayrami.mp3,kurban bayramı,Kurban Bayramı,ItemTable
+kurbaga.mp3,kurbağa,Kurbağa,ItemTable
+kurt.mp3,kurt,Kurt,ItemTable
+kurtarici_isa_heykeli.mp3,kurtarıcı isa heykeli,Kurtarıcı İsa Heykeli,ItemTable
+kuru_hurma.mp3,kuru hurma,Kuru Hurma,ItemTable
+kuru_kayisi.mp3,kuru kayısı,Kuru Kayısı,ItemTable
+kuru_uzum.mp3,kuru üzüm,Kuru Üzüm,ItemTable
+kursun_kalem.mp3,kurşun kalem,Kurşun Kalem,ItemTable
+kutup_ayisi.mp3,kutup ayısı,Kutup Ayısı,ItemTable
+kuyruksallayan.mp3,kuyruksallayan,Kuyruksallayan,ItemTable
+kuzey.mp3,kuzey,Kuzey,ItemTable
+kuzey_isiklari.mp3,kuzey ışıkları,Kuzey Işıkları,ItemTable
+kuzeybati.mp3,kuzeybatı,Kuzeybatı,ItemTable
+kuzeydogu.mp3,kuzeydoğu,Kuzeydoğu,ItemTable
+kuskonmaz.mp3,kuşkonmaz,Kuşkonmaz,ItemTable
+kopekbaligi.mp3,köpekbalığı,Köpekbalığı,ItemTable
+kuba.mp3,küba,Küba,ItemTable
+kup.mp3,küp,Küp,ItemTable
+kure.mp3,küre,Küre,ItemTable
+kutuphaneci.mp3,kütüphaneci,Kütüphaneci,ItemTable
+kirlangic.mp3,kırlangıç,Kırlangıç,ItemTable
+kirmizi.mp3,kırmızı,Kırmızı,ItemTable
+kirmizi_lahana.mp3,kırmızı lahana,Kırmızı Lahana,ItemTable
+kizkusu.mp3,kızkuşu,Kızkuşu,ItemTable
+kizil_tilki.mp3,kızıl tilki,Kızıl Tilki,ItemTable
+kizilgerdan.mp3,kızılgerdan,Kızılgerdan,ItemTable
+kis.mp3,kış,Kış,ItemTable
+lale.mp3,lale,Lale,ItemTable
+laos.mp3,laos,Laos,ItemTable
+lavanta.mp3,lavanta,Lavanta,ItemTable
+leylak.mp3,leylak,Leylak,ItemTable
+limon.mp3,limon,Limon,ItemTable
+limonun_l_si.mp3,limonun l'si,Limonun L'si,ItemTable
+lici.mp3,liçi,Liçi,ItemTable
+lotus.mp3,lotus,Lotus,ItemTable
+madeni_para.mp3,madeni para,Madeni Para,ItemTable
+makademya_findigi.mp3,makademya fındığı,Makademya Fındığı,ItemTable
+makas.mp3,makas,Makas,ItemTable
+malezya.mp3,malezya,Malezya,ItemTable
+mandolin.mp3,mandolin,Mandolin,ItemTable
+mango.mp3,mango,Mango,ItemTable
+mantar.mp3,mantar,Mantar,ItemTable
+marangoz.mp3,marangoz,Marangoz,ItemTable
+mart.mp3,mart,Mart,ItemTable
+marul.mp3,marul,Marul,ItemTable
+masa.mp3,masa,Masa,ItemTable
+masa_tenisi.mp3,masa tenisi,Masa Tenisi,ItemTable
+mavi.mp3,mavi,Mavi,ItemTable
+mavi_balina.mp3,mavi balina,Mavi Balina,ItemTable
+maymun.mp3,maymun,Maymun,ItemTable
+maymunun_m_si.mp3,maymunun m'si,Maymunun M'si,ItemTable
+mayis.mp3,mayıs,Mayıs,ItemTable
+macu_picu.mp3,maçu piçu,Maçu Piçu,ItemTable
+magara.mp3,mağara,Mağara,ItemTable
+meksika.mp3,meksika,Meksika,ItemTable
+menekse.mp3,menekşe,Menekşe,ItemTable
+metro.mp3,metro,Metro,ItemTable
+meyve_suyu.mp3,meyve suyu,Meyve Suyu,ItemTable
+mide.mp3,mide,Mide,ItemTable
+mimar.mp3,mimar,Mimar,ItemTable
+mirket.mp3,mirket,Mirket,ItemTable
+misket_limonu.mp3,misket limonu,Misket Limonu,ItemTable
+model.mp3,model,Model,ItemTable
+mor.mp3,mor,Mor,ItemTable
+mors.mp3,mors,Mors,ItemTable
+motosiklet.mp3,motosiklet,Motosiklet,ItemTable
+muhasebeci.mp3,muhasebeci,Muhasebeci,ItemTable
+mungos.mp3,mungos,Mungos,ItemTable
+myanmar.mp3,myanmar,Myanmar,ItemTable
+muhendis.mp3,mühendis,Mühendis,ItemTable
+muhur.mp3,mühür,Mühür,ItemTable
+mizika.mp3,mızıka,Mızıka,ItemTable
+nane.mp3,nane,Nane,ItemTable
+nar_cicegi.mp3,nar çiçeği,Nar Çiçeği,ItemTable
+narin_n_si.mp3,narın n'si,Narın N'si,ItemTable
+nehir.mp3,nehir,Nehir,ItemTable
+nektarin.mp3,nektarin,Nektarin,ItemTable
+nergis.mp3,nergis,Nergis,ItemTable
+newroz_bayrami.mp3,newroz bayramı,Newroz Bayramı,ItemTable
+nisan.mp3,nisan,Nisan,ItemTable
+ocak.mp3,ocak,Ocak,ItemTable
+ok.mp3,ok,Ok,ItemTable
+oklu_kirpi.mp3,oklu kirpi,Oklu Kirpi,ItemTable
+okul.mp3,okul,Okul,ItemTable
+okul_cantasi.mp3,okul çantası,Okul Çantası,ItemTable
+okculuk.mp3,okçuluk,Okçuluk,ItemTable
+omuz.mp3,omuz,Omuz,ItemTable
+on.mp3,on,On,ItemTable
+on_alti.mp3,on altı,On Altı,ItemTable
+on_bes.mp3,on beş,On Beş,ItemTable
+on_bir.mp3,on bir,On Bir,ItemTable
+on_dokuz.mp3,on dokuz,On Dokuz,ItemTable
+on_dort.mp3,on dört,On Dört,ItemTable
+on_iki.mp3,on iki,On İki,ItemTable
+on_sekiz.mp3,on sekiz,On Sekiz,ItemTable
+on_yedi.mp3,on yedi,On Yedi,ItemTable
+on_uc.mp3,on üç,On Üç,ItemTable
+onkenar.mp3,onkenar,Onkenar,ItemTable
+orkide.mp3,orkide,Orkide,ItemTable
+orman.mp3,orman,Orman,ItemTable
+otobus.mp3,otobüs,Otobüs,ItemTable
+otobusun_o_su.mp3,otobüsün o'su,Otobüsün O'su,ItemTable
+oval.mp3,oval,Oval,ItemTable
+pakistan.mp3,pakistan,Pakistan,ItemTable
+panda.mp3,panda,Panda,ItemTable
+panter.mp3,panter,Panter,ItemTable
+papatya.mp3,papatya,Papatya,ItemTable
+papaya.mp3,papaya,Papaya,ItemTable
+papagan.mp3,papağan,Papağan,ItemTable
+papaganin_p_si.mp3,papağanın p'si,Papağanın P'si,ItemTable
+paralelkenar.mp3,paralelkenar,Paralelkenar,ItemTable
+parmaklar.mp3,parmaklar,Parmaklar,ItemTable
+paskalya.mp3,paskalya,Paskalya,ItemTable
+pasta.mp3,pasta,Pasta,ItemTable
+patates.mp3,patates,Patates,ItemTable
+patlican.mp3,patlıcan,Patlıcan,ItemTable
+pazar.mp3,pazar,Pazar,ItemTable
+pazartesi.mp3,pazartesi,Pazartesi,ItemTable
+pekan_cevizi.mp3,pekan cevizi,Pekan Cevizi,ItemTable
+pembe.mp3,pembe,Pembe,ItemTable
+pencere.mp3,pencere,Pencere,ItemTable
+pergel.mp3,pergel,Pergel,ItemTable
+pergel_takimi.mp3,pergel takımı,Pergel Takımı,ItemTable
+persembe.mp3,perşembe,Perşembe,ItemTable
+petra_antik_kenti.mp3,petra antik kenti,Petra Antik Kenti,ItemTable
+petunya.mp3,petunya,Petunya,ItemTable
+peynir.mp3,peynir,Peynir,ItemTable
+pijama.mp3,pijama,Pijama,ItemTable
+pikolo_flut.mp3,pikolo flüt,Pikolo Flüt,ItemTable
+pilot.mp3,pilot,Pilot,ItemTable
+piramit.mp3,piramit,Piramit,ItemTable
+pirinc.mp3,pirinç,Pirinç,ItemTable
+piton.mp3,piton,Piton,ItemTable
+piyano.mp3,piyano,Piyano,ItemTable
+pizza.mp3,pizza,Pizza,ItemTable
+polis_araci.mp3,polis aracı,Polis Aracı,ItemTable
+portakal.mp3,portakal,Portakal,ItemTable
+portekiz.mp3,portekiz,Portekiz,ItemTable
+puma.mp3,puma,Puma,ItemTable
+radyonun_r_si.mp3,radyonun r'si,Radyonun R'si,ItemTable
+rakun.mp3,rakun,Rakun,ItemTable
+ramazan_bayrami.mp3,ramazan bayramı,Ramazan Bayramı,ItemTable
+raptiyeler.mp3,raptiyeler,Raptiyeler,ItemTable
+resepsiyonist.mp3,resepsiyonist,Resepsiyonist,ItemTable
+resim.mp3,resim,Resim,ItemTable
+ressam.mp3,ressam,Ressam,ItemTable
+rusya.mp3,rusya,Rusya,ItemTable
+ruzgar_sorfu.mp3,rüzgar sörfü,Rüzgar Sörfü,ItemTable
+saat.mp3,saat,Saat,ItemTable
+saatin_s_si.mp3,saatin s'si,Saatin sesi,ItemTable
+saksafon.mp3,saksafon,Saksafon,ItemTable
+salatalik.mp3,salatalık,Salatalık,ItemTable
+salyangoz.mp3,salyangoz,Salyangoz,ItemTable
+sali.mp3,salı,Salı,ItemTable
+sandalye.mp3,sandalye,Sandalye,ItemTable
+sandvic.mp3,sandviç,Sandviç,ItemTable
+sari.mp3,sarı,Sarı,ItemTable
+sarimsak.mp3,sarımsak,Sarımsak,ItemTable
+satranc.mp3,satranç,Satranç,ItemTable
+sac.mp3,saç,Saç,ItemTable
+sekiz.mp3,sekiz,Sekiz,ItemTable
+sekizgen.mp3,sekizgen,Sekizgen,ItemTable
+semender.mp3,semender,Semender,ItemTable
+serce.mp3,serçe,Serçe,ItemTable
+silgi.mp3,silgi,Silgi,ItemTable
+silindir.mp3,silindir,Silindir,ItemTable
+sincap.mp3,sincap,Sincap,ItemTable
+singapur.mp3,singapur,Singapur,ItemTable
+sis.mp3,sis,Sis,ItemTable
+sivrisinek.mp3,sivrisinek,Sivrisinek,ItemTable
+siyah.mp3,siyah,Siyah,ItemTable
+soda.mp3,soda,Soda,ItemTable
+sonbahar.mp3,sonbahar,Sonbahar,ItemTable
+sogan.mp3,soğan,Soğan,ItemTable
+su.mp3,su,Su,ItemTable
+su_aygiri.mp3,su aygırı,Su Aygırı,ItemTable
+su_samuru.mp3,su samuru,Su Samuru,ItemTable
+suudi_arabistan.mp3,suudi arabistan,Suudi Arabistan,ItemTable
+sorf.mp3,sörf,Sörf,ItemTable
+sozluk.mp3,sözlük,Sözlük,ItemTable
+sulun.mp3,sülün,Sülün,ItemTable
+sut.mp3,süt,Süt,ItemTable
+sifir.mp3,sıfır,Sıfır,ItemTable
+sira.mp3,sıra,Sıra,ItemTable
+sirtlan.mp3,sırtlan,Sırtlan,ItemTable
+tahta.mp3,tahta,Tahta,ItemTable
+tahta_kalemi.mp3,tahta kalemi,Tahta Kalemi,ItemTable
+tahtakurusu.mp3,tahtakurusu,Tahtakurusu,ItemTable
+takim_elbise.mp3,takım elbise,Takım Elbise,ItemTable
+tamirci.mp3,tamirci,Tamirci,ItemTable
+tarla.mp3,tarla,Tarla,ItemTable
+tavus_kusu.mp3,tavus kuşu,Tavus Kuşu,ItemTable
+tayland.mp3,tayland,Tayland,ItemTable
+taze_fasulye.mp3,taze fasulye,Taze Fasulye,ItemTable
+tac_mahal.mp3,taç mahal,Taç Mahal,ItemTable
+tebesir_tahtasi.mp3,tebeşir tahtası,Tebeşir Tahtası,ItemTable
+tef.mp3,tef,Tef,ItemTable
+tekli_koltuk.mp3,tekli koltuk,Tekli Koltuk,ItemTable
+telefon.mp3,telefon,Telefon,ItemTable
+televizyon.mp3,televizyon,Televizyon,ItemTable
+temizlikci.mp3,temizlikçi,Temizlikçi,ItemTable
+temmuz.mp3,temmuz,Temmuz,ItemTable
+tenis.mp3,tenis,Tenis,ItemTable
+tereyagi.mp3,tereyağı,Tereyağı,ItemTable
+terlik.mp3,terlik,Terlik,ItemTable
+termit.mp3,termit,Termit,ItemTable
+terzi.mp3,terzi,Terzi,ItemTable
+tesisatci.mp3,tesisatçı,Tesisatçı,ItemTable
+tilki.mp3,tilki,Tilki,ItemTable
+timsah.mp3,timsah,Timsah,ItemTable
+ton_baligi.mp3,ton balığı,Ton Balığı,ItemTable
+toprak_solucani.mp3,toprak solucanı,Toprak Solucanı,ItemTable
+trafik_polisi.mp3,trafik polisi,Trafik Polisi,ItemTable
+trampet.mp3,trampet,Trampet,ItemTable
+tren.mp3,tren,Tren,ItemTable
+trenin_t_si.mp3,trenin t'si,Trenin T'si,ItemTable
+tukan.mp3,tukan,Tukan,ItemTable
+tulum.mp3,tulum,Tulum,ItemTable
+turkuaz.mp3,turkuaz,Turkuaz,ItemTable
+turp.mp3,turp,Turp,ItemTable
+turkiye.mp3,türkiye,Türkiye,ItemTable
+uyluk.mp3,uyluk,Uyluk,ItemTable
+ucak.mp3,uçak,Uçak,ItemTable
+ucurtmanin_u_su.mp3,uçurtmanın u'su,Uçurtmanın U'su,ItemTable
+ugur_bocegi.mp3,uğur böceği,Uğur Böceği,ItemTable
+valizin_v_si.mp3,valizin v'si,Valizin V'si,ItemTable
+veteriner.mp3,veteriner,Veteriner,ItemTable
+vietnam.mp3,vietnam,Vietnam,ItemTable
+voleybol.mp3,voleybol,Voleybol,ItemTable
+volkan.mp3,volkan,Volkan,ItemTable
+vombat.mp3,vombat,Vombat,ItemTable
+yaban_mersini.mp3,yaban mersini,Yaban Mersini,ItemTable
+yalicapkini.mp3,yalıçapkını,Yalıçapkını,ItemTable
+yamuk.mp3,yamuk,Yamuk,ItemTable
+yapiskan_notlar.mp3,yapışkan notlar,Yapışkan Notlar,ItemTable
+yasemin.mp3,yasemin,Yasemin,ItemTable
+yatak.mp3,yatak,Yatak,ItemTable
+yaz.mp3,yaz,Yaz,ItemTable
+yazar.mp3,yazar,Yazar,ItemTable
+yazi_tahtasi.mp3,yazı tahtası,Yazı Tahtası,ItemTable
+yagmur.mp3,yağmur,Yağmur,ItemTable
+yagmur_bulutu.mp3,yağmur bulutu,Yağmur Bulutu,ItemTable
+yedi.mp3,yedi,Yedi,ItemTable
+yelkenli.mp3,yelkenli,Yelkenli,ItemTable
+yengec.mp3,yengeç,Yengeç,ItemTable
+yeni_yil.mp3,yeni yıl,Yeni Yıl,ItemTable
+yer_fistigi.mp3,yer fıstığı,Yer Fıstığı,ItemTable
+yesil.mp3,yeşil,Yeşil,ItemTable
+yirmi.mp3,yirmi,Yirmi,ItemTable
+yogurt.mp3,yoğurt,Yoğurt,ItemTable
+yunanistan.mp3,yunanistan,Yunanistan,ItemTable
+yunus.mp3,yunus,Yunus,ItemTable
+yuzme.mp3,yüzme,Yüzme,ItemTable
+yilan_baligi.mp3,yılan balığı,Yılan Balığı,ItemTable
+yildiz.mp3,yıldız,Yıldız,ItemTable
+yildiz_pati.mp3,yıldız patı,Yıldız Patı,ItemTable
+yildiz_cicegi.mp3,yıldız çiçeği,Yıldız Çiçeği,ItemTable
+yildizin_y_si.mp3,yıldızın y'si,Yıldızın Y'si,ItemTable
+zakkum.mp3,zakkum,Zakkum,ItemTable
+zambak.mp3,zambak,Zambak,ItemTable
+zebra.mp3,zebra,Zebra,ItemTable
+zebranin_z_si.mp3,zebranın z'si,Zebranın Z'si,ItemTable
+zurafa.mp3,zürafa,Zürafa,ItemTable
+zimba.mp3,zımba,Zımba,ItemTable
+cakal.mp3,çakal,Çakal,ItemTable
+carkifelek_meyvesi.mp3,çarkıfelek meyvesi,Çarkıfelek Meyvesi,ItemTable
+carsamba.mp3,çarşamba,Çarşamba,ItemTable
+cay.mp3,çay,Çay,ItemTable
+caylak_kusu.mp3,çaylak kuşu,Çaylak Kuşu,ItemTable
+cayir.mp3,çayır,Çayır,ItemTable
+cekirge.mp3,çekirge,Çekirge,ItemTable
+ciftci.mp3,çiftçi,Çiftçi,ItemTable
+cikolata.mp3,çikolata,Çikolata,ItemTable
+cilek.mp3,çilek,Çilek,ItemTable
+cilegin_c_si.mp3,çileğin ç'si,Çileğin Ç'si,ItemTable
+cin_seddi.mp3,çin seddi,Çin Seddi,ItemTable
+cita.mp3,çita,Çita,ItemTable
+ciy.mp3,çiy,Çiy,ItemTable
+cizgili_sincap.mp3,çizgili sincap,Çizgili Sincap,ItemTable
+cicekci.mp3,çiçekçi,Çiçekçi,ItemTable
+cicen_itza.mp3,çiçen itza,Çiçen İtza,ItemTable
+cigdeci.mp3,çiğdeci,Çiğdeci,ItemTable
+cokgen.mp3,çokgen,Çokgen,ItemTable
+corap.mp3,çorap,Çorap,ItemTable
+corba.mp3,çorba,Çorba,ItemTable
+col.mp3,çöl,Çöl,ItemTable
+cop_kamyonu.mp3,çöp kamyonu,Çöp Kamyonu,ItemTable
+copcu.mp3,çöpçü,Çöpçü,ItemTable
+ordek.mp3,ördek,Ördek,ItemTable
+ordegin_o_su.mp3,ördeğin ö'sü,Ördeğin Ö'sü,ItemTable
+orumcek.mp3,örümcek,Örümcek,ItemTable
+ogrenci.mp3,öğrenci,Öğrenci,ItemTable
+ogretmen.mp3,öğretmen,Öğretmen,ItemTable
+uzum.mp3,üzüm,Üzüm,ItemTable
+uzumun_u_su.mp3,üzümün ü'sü,Üzümün Ü'sü,ItemTable
+uc.mp3,üç,Üç,ItemTable
+ucgen.mp3,üçgen,Üçgen,ItemTable
+ihlamurun_i_si.mp3,ıhlamurun ı'sı,Ihlamurun I'sı,ItemTable
+ispanak.mp3,ıspanak,Ispanak,ItemTable
+istakoz.mp3,ıstakoz,Istakoz,ItemTable
+sakayik.mp3,şakayık,Şakayık,ItemTable
+sapka.mp3,şapka,Şapka,ItemTable
+seftali.mp3,şeftali,Şeftali,ItemTable
+selale.mp3,şelale,Şelale,ItemTable
+sempanze.mp3,şempanze,Şempanze,ItemTable
+semsiye.mp3,şemsiye,Şemsiye,ItemTable
+semsiyenin_s_si.mp3,şemsiyenin ş'si,Şemsiyenin Ş'si,ItemTable
+simsek.mp3,şimşek,Şimşek,ItemTable
+sise.mp3,şişe,Şişe,ItemTable
+sofor.mp3,şoför,Şoför,ItemTable
+sort.mp3,şort,Şort,ItemTable
+subat.mp3,şubat,Şubat,ItemTable
+altiya_ceyrek_var.mp3,altıya çeyrek var,Altıya çeyrek var,Saat
+bir_bucuk.mp3,bir buçuk,Bir buçuk,Saat
+dokuz_bucuk.mp3,dokuz buçuk,Dokuz buçuk,Saat
+dokuza_ceyrek_var.mp3,dokuza çeyrek var,Dokuza çeyrek var,Saat
+dordu_ceyrek_geciyor.mp3,dördü çeyrek geçiyor,Dördü çeyrek geçiyor,Saat
+iki_bucuk.mp3,iki buçuk,İki buçuk,Saat
+on_biri_ceyrek_geciyor.mp3,on biri çeyrek geçiyor,On biri çeyrek geçiyor,Saat
+on_ikiye_ceyrek_var.mp3,on ikiye çeyrek var,On ikiye çeyrek var,Saat
+onu_ceyrek_geciyor.mp3,onu çeyrek geçiyor,Onu çeyrek geçiyor,Saat
+saat_alti.mp3,saat altı,Saat altı,Saat
+saat_on.mp3,saat on,Saat on,Saat
+saat_on_iki.mp3,saat on iki,Saat on iki,Saat
+saat_uc.mp3,saat üç,Saat üç,Saat
+sekiz_bucuk.mp3,sekiz buçuk,Sekiz buçuk,Saat
+yediyi_ceyrek_geciyor.mp3,yediyi çeyrek geçiyor,Yediyi çeyrek geçiyor,Saat
+uce_ceyrek_var.mp3,üçe çeyrek var,Üçe çeyrek var,Saat
+dogru_cevap.mp3,doğru cevap,Doğru Cevap,Sabit
+eksi.mp3,eksi,eksi,Sabit
+esittir.mp3,eşittir,eşittir,Sabit
+hangisi_daha_az.mp3,hangisi daha az?,Hangisi daha az?,Sabit
+hangisi_daha_fazla.mp3,hangisi daha fazla?,Hangisi daha fazla?,Sabit
+harika.mp3,harika,Harika,Sabit
+kac_tane_obje_var.mp3,kaç tane obje var?,Kaç Tane Obje Var?,Sabit
+objeleri_say.mp3,objeleri say,Objeleri say,Sabit
+tebrikler.mp3,tebrikler,Tebrikler,Sabit
+yanlis_cevap.mp3,yanlış cevap,Yanlış Cevap,Sabit
+altmis.mp3,altmış,altmış,Sayı
+altmis_alti.mp3,altmış altı,altmış altı,Sayı
+altmis_bes.mp3,altmış beş,altmış beş,Sayı
+altmis_bir.mp3,altmış bir,altmış bir,Sayı
+altmis_dokuz.mp3,altmış dokuz,altmış dokuz,Sayı
+altmis_dort.mp3,altmış dört,altmış dört,Sayı
+altmis_iki.mp3,altmış iki,altmış iki,Sayı
+altmis_sekiz.mp3,altmış sekiz,altmış sekiz,Sayı
+altmis_yedi.mp3,altmış yedi,altmış yedi,Sayı
+altmis_uc.mp3,altmış üç,altmış üç,Sayı
+doksan.mp3,doksan,doksan,Sayı
+doksan_alti.mp3,doksan altı,doksan altı,Sayı
+doksan_bes.mp3,doksan beş,doksan beş,Sayı
+doksan_bir.mp3,doksan bir,doksan bir,Sayı
+doksan_dokuz.mp3,doksan dokuz,doksan dokuz,Sayı
+doksan_dort.mp3,doksan dört,doksan dört,Sayı
+doksan_iki.mp3,doksan iki,doksan iki,Sayı
+doksan_sekiz.mp3,doksan sekiz,doksan sekiz,Sayı
+doksan_yedi.mp3,doksan yedi,doksan yedi,Sayı
+doksan_uc.mp3,doksan üç,doksan üç,Sayı
+elli.mp3,elli,elli,Sayı
+elli_alti.mp3,elli altı,elli altı,Sayı
+elli_bes.mp3,elli beş,elli beş,Sayı
+elli_bir.mp3,elli bir,elli bir,Sayı
+elli_dokuz.mp3,elli dokuz,elli dokuz,Sayı
+elli_dort.mp3,elli dört,elli dört,Sayı
+elli_iki.mp3,elli iki,elli iki,Sayı
+elli_sekiz.mp3,elli sekiz,elli sekiz,Sayı
+elli_yedi.mp3,elli yedi,elli yedi,Sayı
+elli_uc.mp3,elli üç,elli üç,Sayı
+kirk.mp3,kırk,kırk,Sayı
+kirk_alti.mp3,kırk altı,kırk altı,Sayı
+kirk_bes.mp3,kırk beş,kırk beş,Sayı
+kirk_bir.mp3,kırk bir,kırk bir,Sayı
+kirk_dokuz.mp3,kırk dokuz,kırk dokuz,Sayı
+kirk_dort.mp3,kırk dört,kırk dört,Sayı
+kirk_iki.mp3,kırk iki,kırk iki,Sayı
+kirk_sekiz.mp3,kırk sekiz,kırk sekiz,Sayı
+kirk_yedi.mp3,kırk yedi,kırk yedi,Sayı
+kirk_uc.mp3,kırk üç,kırk üç,Sayı
+otuz.mp3,otuz,otuz,Sayı
+otuz_alti.mp3,otuz altı,otuz altı,Sayı
+otuz_bes.mp3,otuz beş,otuz beş,Sayı
+otuz_bir.mp3,otuz bir,otuz bir,Sayı
+otuz_dokuz.mp3,otuz dokuz,otuz dokuz,Sayı
+otuz_dort.mp3,otuz dört,otuz dört,Sayı
+otuz_iki.mp3,otuz iki,otuz iki,Sayı
+otuz_sekiz.mp3,otuz sekiz,otuz sekiz,Sayı
+otuz_yedi.mp3,otuz yedi,otuz yedi,Sayı
+otuz_uc.mp3,otuz üç,otuz üç,Sayı
+seksen.mp3,seksen,seksen,Sayı
+seksen_alti.mp3,seksen altı,seksen altı,Sayı
+seksen_bes.mp3,seksen beş,seksen beş,Sayı
+seksen_bir.mp3,seksen bir,seksen bir,Sayı
+seksen_dokuz.mp3,seksen dokuz,seksen dokuz,Sayı
+seksen_dort.mp3,seksen dört,seksen dört,Sayı
+seksen_iki.mp3,seksen iki,seksen iki,Sayı
+seksen_sekiz.mp3,seksen sekiz,seksen sekiz,Sayı
+seksen_yedi.mp3,seksen yedi,seksen yedi,Sayı
+seksen_uc.mp3,seksen üç,seksen üç,Sayı
+yetmis.mp3,yetmiş,yetmiş,Sayı
+yetmis_alti.mp3,yetmiş altı,yetmiş altı,Sayı
+yetmis_bes.mp3,yetmiş beş,yetmiş beş,Sayı
+yetmis_bir.mp3,yetmiş bir,yetmiş bir,Sayı
+yetmis_dokuz.mp3,yetmiş dokuz,yetmiş dokuz,Sayı
+yetmis_dort.mp3,yetmiş dört,yetmiş dört,Sayı
+yetmis_iki.mp3,yetmiş iki,yetmiş iki,Sayı
+yetmis_sekiz.mp3,yetmiş sekiz,yetmiş sekiz,Sayı
+yetmis_yedi.mp3,yetmiş yedi,yetmiş yedi,Sayı
+yetmis_uc.mp3,yetmiş üç,yetmiş üç,Sayı
+yirmi_alti.mp3,yirmi altı,yirmi altı,Sayı
+yirmi_bes.mp3,yirmi beş,yirmi beş,Sayı
+yirmi_bir.mp3,yirmi bir,yirmi bir,Sayı
+yirmi_dokuz.mp3,yirmi dokuz,yirmi dokuz,Sayı
+yirmi_dort.mp3,yirmi dört,yirmi dört,Sayı
+yirmi_iki.mp3,yirmi iki,yirmi iki,Sayı
+yirmi_sekiz.mp3,yirmi sekiz,yirmi sekiz,Sayı
+yirmi_yedi.mp3,yirmi yedi,yirmi yedi,Sayı
+yirmi_uc.mp3,yirmi üç,yirmi üç,Sayı
+yuz.mp3,yüz,yüz,Sayı
+alfabe.mp3,alfabe,Alfabe,SubCategoryTable
+araclar.mp3,araçlar,Araçlar,SubCategoryTable
+ay.mp3,ay,Ay,SubCategoryTable
+bayramlar.mp3,bayramlar,Bayramlar,SubCategoryTable
+deniz_hayvanlari.mp3,deniz hayvanları,Deniz Hayvanları,SubCategoryTable
+doga.mp3,doğa,Doğa,SubCategoryTable
+doga_olaylari.mp3,doğa olayları,Doğa Olayları,SubCategoryTable
+dunyanin_harikalari.mp3,dünyanın harikaları,Dünyanın Harikaları,SubCategoryTable
+ev_esyalari.mp3,ev eşyaları,Ev Eşyaları,SubCategoryTable
+geometrik_sekiller.mp3,geometrik şekiller,Geometrik Şekiller,SubCategoryTable
+giysiler.mp3,giysiler,Giysiler,SubCategoryTable
+haftanin_gunleri.mp3,haftanın günleri,Haftanın Günleri,SubCategoryTable
+hayvanlar.mp3,hayvanlar,Hayvanlar,SubCategoryTable
+kuruyemisler.mp3,kuruyemişler,Kuruyemişler,SubCategoryTable
+kuslar.mp3,kuşlar,Kuşlar,SubCategoryTable
+kirtasiye_urunleri.mp3,kırtasiye ürünleri,Kırtasiye Ürünleri,SubCategoryTable
+meslekler.mp3,meslekler,Meslekler,SubCategoryTable
+mevsimler.mp3,mevsimler,Mevsimler,SubCategoryTable
+meyveler.mp3,meyveler,Meyveler,SubCategoryTable
+muzik_enstrumanlari.mp3,müzik enstrümanları,Müzik Enstrümanları,SubCategoryTable
+sayilar.mp3,sayılar,Sayılar,SubCategoryTable
+sebzeler.mp3,sebzeler,Sebzeler,SubCategoryTable
+sporlar.mp3,sporlar,Sporlar,SubCategoryTable
+surungenler_ve_bocekler.mp3,sürüngenler ve böcekler,Sürüngenler ve Böcekler,SubCategoryTable
+vucut_bolumleri.mp3,vücut bölümleri,Vücut Bölümleri,SubCategoryTable
+yiyecekler.mp3,yiyecekler,Yiyecekler,SubCategoryTable
+yonler.mp3,yönler,Yönler,SubCategoryTable
+cicekler.mp3,çiçekler,Çiçekler,SubCategoryTable
+ulkeler.mp3,ülkeler,Ülkeler,SubCategoryTable
+sekiller.mp3,şekiller,Şekiller,SubCategoryTable
+sifir.mp3,0,sıfır,Rakam
+bir.mp3,1,bir,Rakam
+iki.mp3,2,iki,Rakam
+uc.mp3,3,üç,Rakam
+dort.mp3,4,dört,Rakam
+bes.mp3,5,beş,Rakam
+alti.mp3,6,altı,Rakam
+yedi.mp3,7,yedi,Rakam
+sekiz.mp3,8,sekiz,Rakam
+dokuz.mp3,9,dokuz,Rakam
+on.mp3,10,on,Rakam
+on_bir.mp3,11,on bir,Rakam
+on_iki.mp3,12,on iki,Rakam
+on_uc.mp3,13,on üç,Rakam
+on_dort.mp3,14,on dört,Rakam
+on_bes.mp3,15,on beş,Rakam
+on_alti.mp3,16,on altı,Rakam
+on_yedi.mp3,17,on yedi,Rakam
+on_sekiz.mp3,18,on sekiz,Rakam
+on_dokuz.mp3,19,on dokuz,Rakam
+yirmi.mp3,20,yirmi,Rakam
+yirmi_bir.mp3,21,yirmi bir,Rakam
+yirmi_iki.mp3,22,yirmi iki,Rakam
+yirmi_uc.mp3,23,yirmi üç,Rakam
+yirmi_dort.mp3,24,yirmi dört,Rakam
+yirmi_bes.mp3,25,yirmi beş,Rakam
+yirmi_alti.mp3,26,yirmi altı,Rakam
+yirmi_yedi.mp3,27,yirmi yedi,Rakam
+yirmi_sekiz.mp3,28,yirmi sekiz,Rakam
+yirmi_dokuz.mp3,29,yirmi dokuz,Rakam
+otuz.mp3,30,otuz,Rakam
+otuz_bir.mp3,31,otuz bir,Rakam
+otuz_iki.mp3,32,otuz iki,Rakam
+otuz_uc.mp3,33,otuz üç,Rakam
+otuz_dort.mp3,34,otuz dört,Rakam
+otuz_bes.mp3,35,otuz beş,Rakam
+otuz_alti.mp3,36,otuz altı,Rakam
+otuz_yedi.mp3,37,otuz yedi,Rakam
+otuz_sekiz.mp3,38,otuz sekiz,Rakam
+otuz_dokuz.mp3,39,otuz dokuz,Rakam
+kirk.mp3,40,kırk,Rakam
+kirk_bir.mp3,41,kırk bir,Rakam
+kirk_iki.mp3,42,kırk iki,Rakam
+kirk_uc.mp3,43,kırk üç,Rakam
+kirk_dort.mp3,44,kırk dört,Rakam
+kirk_bes.mp3,45,kırk beş,Rakam
+kirk_alti.mp3,46,kırk altı,Rakam
+kirk_yedi.mp3,47,kırk yedi,Rakam
+kirk_sekiz.mp3,48,kırk sekiz,Rakam
+kirk_dokuz.mp3,49,kırk dokuz,Rakam
+elli.mp3,50,elli,Rakam
+elli_bir.mp3,51,elli bir,Rakam
+elli_iki.mp3,52,elli iki,Rakam
+elli_uc.mp3,53,elli üç,Rakam
+elli_dort.mp3,54,elli dört,Rakam
+elli_bes.mp3,55,elli beş,Rakam
+elli_alti.mp3,56,elli altı,Rakam
+elli_yedi.mp3,57,elli yedi,Rakam
+elli_sekiz.mp3,58,elli sekiz,Rakam
+elli_dokuz.mp3,59,elli dokuz,Rakam
+altmis.mp3,60,altmış,Rakam
+altmis_bir.mp3,61,altmış bir,Rakam
+altmis_iki.mp3,62,altmış iki,Rakam
+altmis_uc.mp3,63,altmış üç,Rakam
+altmis_dort.mp3,64,altmış dört,Rakam
+altmis_bes.mp3,65,altmış beş,Rakam
+altmis_alti.mp3,66,altmış altı,Rakam
+altmis_yedi.mp3,67,altmış yedi,Rakam
+altmis_sekiz.mp3,68,altmış sekiz,Rakam
+altmis_dokuz.mp3,69,altmış dokuz,Rakam
+yetmis.mp3,70,yetmiş,Rakam
+yetmis_bir.mp3,71,yetmiş bir,Rakam
+yetmis_iki.mp3,72,yetmiş iki,Rakam
+yetmis_uc.mp3,73,yetmiş üç,Rakam
+yetmis_dort.mp3,74,yetmiş dört,Rakam
+yetmis_bes.mp3,75,yetmiş beş,Rakam
+yetmis_alti.mp3,76,yetmiş altı,Rakam
+yetmis_yedi.mp3,77,yetmiş yedi,Rakam
+yetmis_sekiz.mp3,78,yetmiş sekiz,Rakam
+yetmis_dokuz.mp3,79,yetmiş dokuz,Rakam
+seksen.mp3,80,seksen,Rakam
+seksen_bir.mp3,81,seksen bir,Rakam
+seksen_iki.mp3,82,seksen iki,Rakam
+seksen_uc.mp3,83,seksen üç,Rakam
+seksen_dort.mp3,84,seksen dört,Rakam
+seksen_bes.mp3,85,seksen beş,Rakam
+seksen_alti.mp3,86,seksen altı,Rakam
+seksen_yedi.mp3,87,seksen yedi,Rakam
+seksen_sekiz.mp3,88,seksen sekiz,Rakam
+seksen_dokuz.mp3,89,seksen dokuz,Rakam
+doksan.mp3,90,doksan,Rakam
+doksan_bir.mp3,91,doksan bir,Rakam
+doksan_iki.mp3,92,doksan iki,Rakam
+doksan_uc.mp3,93,doksan üç,Rakam
+doksan_dort.mp3,94,doksan dört,Rakam
+doksan_bes.mp3,95,doksan beş,Rakam
+doksan_alti.mp3,96,doksan altı,Rakam
+doksan_yedi.mp3,97,doksan yedi,Rakam
+doksan_sekiz.mp3,98,doksan sekiz,Rakam
+doksan_dokuz.mp3,99,doksan dokuz,Rakam
+yuz.mp3,100,yüz,Rakam

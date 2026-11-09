@@ -29,7 +29,7 @@ class AddSubtractController extends GetxController {
   void onInit() {
     getDataFromArgs();
     generateNumbers();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
      Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     super.onInit();
   }
@@ -91,10 +91,10 @@ class AddSubtractController extends GetxController {
 
   textSpeech() {
     if (subId == 14) {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech("$num1" + " Eksi " + "$num2" + " =", MyApp.flutterTts);
     } else {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech("$num1" + " + " + "$num2" + " =", MyApp.flutterTts);
     }
   }

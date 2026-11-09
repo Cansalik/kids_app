@@ -16,6 +16,7 @@ import 'package:kids_playroom/utils/color.dart';
 import 'package:kids_playroom/utils/constant.dart';
 import 'package:kids_playroom/utils/preference.dart';
 import 'package:kids_playroom/utils/utils.dart';
+import 'package:kids_playroom/utils/voice_helper.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -77,6 +78,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Utils.initTts(MyApp.flutterTts);
+      VoiceHelper.warmUp();
     });
     super.initState();
   }
@@ -94,7 +96,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       }
     } else {
       // Uygulama arka plana geçince konuşmayı da durdur.
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       _getPreference();
       if (isMusic!) {
         Utils.audioPlayer.pause();
@@ -150,7 +152,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 class _TtsStopObserver extends NavigatorObserver {
   @override
   void didPop(Route route, Route? previousRoute) {
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     super.didPop(route, previousRoute);
   }
 }

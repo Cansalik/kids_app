@@ -27,7 +27,7 @@ class UpperLowerController extends GetxController{
   @override
   void onInit() {
     getDataFromArgs();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(title!.tr, MyApp.flutterTts);
     getOptions();
     super.onInit();
@@ -151,7 +151,7 @@ class UpperLowerController extends GetxController{
 
   Future<void> onAccept(Object? data, int? pageIndex,
       BuildContext context) async {
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(
         alphabets[lower.keys.firstWhere((element) => lower[element] == data)]!,
         MyApp.flutterTts);
@@ -161,7 +161,7 @@ update();
     }
 
     if (count.length == que.length) {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         accept = true;
 update();

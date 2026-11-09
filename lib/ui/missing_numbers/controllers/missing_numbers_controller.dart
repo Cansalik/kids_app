@@ -48,7 +48,7 @@ class MissingNumbersController extends GetxController {
     }
 
     if (count.length == que.length) {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         accept = true;
         update();

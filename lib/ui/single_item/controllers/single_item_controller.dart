@@ -21,7 +21,7 @@
 //       if (index > 0) {
 //         index--;
 //
-//         MyApp.flutterTts.stop();
+//         Utils.stopSpeech(MyApp.flutterTts);
 //         Utils.textToSpeech(
 //             itemDataList![index]
 //                 .itemNameTts!.tr
@@ -37,7 +37,7 @@
 //     if (index < itemDataList!.length - 1 ) {
 //       index++;
 //
-//       MyApp.flutterTts.stop();
+//       Utils.stopSpeech(MyApp.flutterTts);
 //       Utils.textToSpeech(
 //           itemDataList![index]
 //               .itemNameTts!.tr
@@ -129,7 +129,7 @@ class SingleItemController extends GetxController {
       index--;
       showAnimation = !showAnimation;
       animateController;
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech(
         itemDataList![index].itemNameTts!.tr.toLowerTr(),
         MyApp.flutterTts,
@@ -144,7 +144,7 @@ class SingleItemController extends GetxController {
       index++;
       showAnimation = !showAnimation;
       animateController;
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech(
         itemDataList![index].itemNameTts!.tr.toLowerTr(),
         MyApp.flutterTts,

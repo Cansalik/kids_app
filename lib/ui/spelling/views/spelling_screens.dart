@@ -270,7 +270,7 @@ draggables(BuildContext context, int pageIndex) {
                   ),
                   onDragStarted: () {
                     logic.currentIndex = index;
-                    MyApp.flutterTts.stop();
+                    Utils.stopSpeech(MyApp.flutterTts);
                      Utils.textToSpeech(
                         logic.letters![logic.shuffled![index]]!.toLowerTr(), MyApp.flutterTts);
                   },

@@ -340,7 +340,7 @@ _dragTarget(BuildContext context, {int? index}) {
         onAcceptWithDetails: (data) async {
           logic.accept = true;
           logic.update();
-          MyApp.flutterTts.stop();
+          Utils.stopSpeech(MyApp.flutterTts);
           if (logic.subId == 17 && logic.itemList[index!].itemName == "Half") {
             Utils.textToSpeech(logic.itemList[index].itemName! + "txtDollar".tr,
                 MyApp.flutterTts);

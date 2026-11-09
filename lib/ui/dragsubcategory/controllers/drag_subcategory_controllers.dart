@@ -106,7 +106,7 @@ class DragSubcategoryControllers extends GetxController {
                 categoryList![index].categoryId
               ]);
             } else {
-              MyApp.flutterTts.stop();
+              Utils.stopSpeech(MyApp.flutterTts);
               Utils.textToSpeech(categoryList![index].categoryName!.tr, MyApp.flutterTts);
               Get.toNamed(AppRoutes.dragQuiz, arguments: [
                 categoryList![index].categoryName,

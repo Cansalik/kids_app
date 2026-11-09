@@ -212,7 +212,7 @@ dragTarget(BuildContext context, {int? index}) {
               );
       },
       onAcceptWithDetails: (data) async {
-        MyApp.flutterTts.stop();
+        Utils.stopSpeech(MyApp.flutterTts);
         Utils.textToSpeech("Awesome".tr, MyApp.flutterTts);
         logic.accept = true;
         logic.update();
@@ -273,7 +273,7 @@ option1(BuildContext context) {
     return Draggable(
       maxSimultaneousDrags: logic.accept! || logic.isDrag! ? 0 : 1,
       onDragStarted: () {
-        MyApp.flutterTts.stop();
+        Utils.stopSpeech(MyApp.flutterTts);
         Utils.textToSpeech(logic.options![0].toString(), MyApp.flutterTts);
         logic.isDrag = true;
       },
@@ -336,7 +336,7 @@ option2(BuildContext context) {
       onDragStarted: () {
         logic.isDrag = true;
         logic.update();
-        MyApp.flutterTts.stop();
+        Utils.stopSpeech(MyApp.flutterTts);
         Utils.textToSpeech(logic.options![1].toString(), MyApp.flutterTts);
       },
       onDragEnd: (_) {
@@ -395,7 +395,7 @@ option3(BuildContext context) {
       onDragStarted: () {
         logic.isDrag = true;
         logic.update();
-        MyApp.flutterTts.stop();
+        Utils.stopSpeech(MyApp.flutterTts);
         Utils.textToSpeech(logic.options![2].toString(), MyApp.flutterTts);
       },
       onDragEnd: (_) {

@@ -52,7 +52,7 @@ class QuantityController extends GetxController{
     Debug.printLog("options: $opt");
     options = opt.toList();
     options.shuffle();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(Constant.txtHowManyObjects, MyApp.flutterTts);
   }
 

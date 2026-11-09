@@ -82,7 +82,7 @@ class ItemScreen extends StatelessWidget {
     return InkWell(
       onTap: () {
         Get.toNamed(AppRoutes.singleItem, arguments: index);
-        MyApp.flutterTts.stop();
+        Utils.stopSpeech(MyApp.flutterTts);
         Utils.textToSpeech(
             itemList.itemNameTts!.tr.toLowerTr(), MyApp.flutterTts);
       },

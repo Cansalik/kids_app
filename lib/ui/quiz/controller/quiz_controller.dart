@@ -64,7 +64,7 @@ class QuizController extends GetxController {
   initSound() {
     final trueItem = getCurrentTrueItem();
     if (catId == 3 || catId == 4) {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       Utils.textToSpeech(
           trueItem?.itemNameTts.toString().tr ?? "", MyApp.flutterTts);
     }
@@ -95,7 +95,7 @@ class QuizController extends GetxController {
   void onClickPrev() {
     if (currentQuestionIndex > 0) {
       currentQuestionIndex--;
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       syncCurrentQuestion();
       initSound();
     }
@@ -108,11 +108,11 @@ class QuizController extends GetxController {
         currentQuestionIndex < allQuestionsDataMap.length - 1) {
       currentQuestionIndex++;
 
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       syncCurrentQuestion();
       initSound();
     } else {
-      MyApp.flutterTts.stop();
+      Utils.stopSpeech(MyApp.flutterTts);
       getRandomArray();
       initSound();
     }
@@ -189,7 +189,7 @@ class QuizController extends GetxController {
 
     txtCurrentColor = txtColors![itemIndex];
 
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
 
     if (allQuestionsList[itemIndex].isTrue) {
       Utils.textToSpeech("Doğru Cevap", MyApp.flutterTts);

@@ -32,7 +32,7 @@ class CountingController extends GetxController {
   @override
   Future<void> onInit() async {
     getDataFromArgs();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(title.tr, MyApp.flutterTts);
     getNumbers();
     getOptions(0);
@@ -82,7 +82,7 @@ class CountingController extends GetxController {
 
     options = opt.toList();
     options.shuffle();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(Constant.txtCountTheObjects, MyApp.flutterTts);
     update([Constant.idCounting]);
   }

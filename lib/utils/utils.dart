@@ -11,6 +11,7 @@ import 'color.dart';
 import 'constant.dart';
 import 'preference.dart';
 import 'sizer_utils.dart';
+import 'voice_helper.dart';
 import 'package:intl/intl.dart' as intl;
 
 class Utils {
@@ -110,16 +111,30 @@ class Utils {
   static Future textToSpeech(String speakText, FlutterTts flutterTts) async {
     bool value = Preference.shared.getBool(Preference.isSOUND) ?? true;
     if (!value) {
-      await flutterTts.stop();
+      await stopSpeech(flutterTts);
       return;
     }
 
     try {
+      // Önce uygulamayla gelen doğal ses kaydı; yoksa cihazın TTS'i.
+      await VoiceHelper.ensureLoaded();
+      if (VoiceHelper.canPlay(speakText)) {
+        await flutterTts.stop();
+        await VoiceHelper.play(speakText);
+        return;
+      }
+      await VoiceHelper.stop();
       await initTts(flutterTts);
       await flutterTts.speak(speakText);
     } catch (e) {
       debugPrint("TTS Hatası: $e");
     }
+  }
+
+  /// Hem kayıtlı sesi hem cihaz TTS'ini durdurur.
+  static Future stopSpeech(FlutterTts flutterTts) {
+    VoiceHelper.stop();
+    return flutterTts.stop();
   }
 
   static Map<String, Color> colorList = const {

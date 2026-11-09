@@ -14,7 +14,7 @@ class NumbersController extends GetxController {
   @override
   void onInit() {
     getDataFromArgs();
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(title!.tr, MyApp.flutterTts).then((value) =>
         Utils.textToSpeech(NumberToWord().convert(current!), MyApp.flutterTts));
     super.onInit();
@@ -33,7 +33,7 @@ class NumbersController extends GetxController {
 
   onTtsClick(int index){
     current = index + 1;
-    MyApp.flutterTts.stop();
+    Utils.stopSpeech(MyApp.flutterTts);
     Utils.textToSpeech(
         NumberToWord().convert(current!), MyApp.flutterTts);
     update([Constant.idNumbers]);
@@ -42,7 +42,7 @@ class NumbersController extends GetxController {
 
   @override
   void onClose() {
-MyApp.flutterTts.stop();
+Utils.stopSpeech(MyApp.flutterTts);
 super.onClose();
   }
 }
