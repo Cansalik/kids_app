@@ -24,7 +24,7 @@ class DataBaseHelper {
 
   /// assets/database/KidsPlayroom.db içindeki PRAGMA user_version değeri.
   /// Veritabanı her güncellendiğinde ikisi birlikte 1 artırılmalı.
-  static const int assetDbVersion = 1;
+  static const int assetDbVersion = 3;
 
   Future<Database> get db async {
     if (_db != null) return _db!;

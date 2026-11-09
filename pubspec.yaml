@@ -28,7 +28,6 @@ dependencies:
   path_provider: ^2.1.5
   flutter_tts: ^4.2.3
   animate_do: ^4.2.0
-  rate_my_app: ^2.3.2
   share_plus: ^11.0.0
   url_launcher: ^6.3.1
   floodfill_image: ^0.0.8
@@ -64,7 +63,6 @@ flutter:
     - assets/background/
     - assets/category/
     - assets/subcategory/
-    - assets/subcategory/home_fruits.png
     - assets/item/
     - assets/drag assets/alphabets/
     - assets/drag assets/alphabets_objects/
@@ -75,7 +73,6 @@ flutter:
     - assets/drag assets/category/
     - assets/drag assets/colours/
     - assets/drag assets/counting/
-    - assets/drag assets/database/
     - assets/drag assets/days/
     - assets/drag assets/education/
     - assets/drag assets/fruits/

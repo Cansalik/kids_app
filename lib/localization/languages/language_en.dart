@@ -451,6 +451,7 @@ final Map<String, String> enUS = {
   'txtCar': "Car",
   'txtContainer': "Container",
   'txtFire': "Fire",
+  'txtFireTruck': "Fire Truck",
   'txtHelicopter': "Helicopter",
   'txtMotorbike': "Motorbike",
   'txtPlane': "Plane",

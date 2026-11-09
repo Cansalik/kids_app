@@ -25,17 +25,17 @@ class VideoSubcategoryController extends GetxController {
     "Kıyafet Şarkıları"
   ];
   List<String> subCategory = [
-    "vt_abc.png",
-    "vt_number.png",
-    "vt_color.png",
-    "vt_animal.png",
-    "vt_shape.png",
-    "vt_vehicle.png",
-    "vt_fruit.png",
-    "vt_vegetable.png",
-    "vt_day.png",
-    "vt_month.png",
-    "vt_clothes.png"
+    "vt_abc.webp",
+    "vt_number.webp",
+    "vt_color.webp",
+    "vt_animal.webp",
+    "vt_shape.webp",
+    "vt_vehicle.webp",
+    "vt_fruit.webp",
+    "vt_vegetable.webp",
+    "vt_day.webp",
+    "vt_month.webp",
+    "vt_clothes.webp"
   ];
 
   getDataFromArgs() {
